@@ -1,6 +1,6 @@
 >>> SOVEREIGN (dagger tier 7)
 
-<img width="426" height="246" alt="s-u002-sovereign-display" src="https://github.com/user-attachments/assets/449b4eaf-c661-42c0-b7dc-b9cde3624e00" />
+<img width="426" height="246" alt="s-u002-sovereign-display (1)" src="https://github.com/user-attachments/assets/3aede2da-57b8-469c-b2a3-ccb8b17332f2" />
 
 A mod made for the sole purpose of fully conquering serpulo.
 
