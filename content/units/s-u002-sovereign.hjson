@@ -1,6 +1,6 @@
 type: mech
 name: Sovereign
-description: Fires volatile shells at enemy targets.
+description: Fires volatile shells and constant bullet barrages at enemy targets.
 
 research: s-u001-monarch
 health: 350000
@@ -33,6 +33,11 @@ weapons: [
 
   bullet: {
    type: ArtilleryBulletType
+   despawnSound: explosionReactor
+   hitSound: explosionReactor
+   hitSoundPitch: 1.5
+   hitSoundVolume: 0.9
+
    sprite: pocchistuffs-round-bullet
    backColor: e9665b00
    frontColor: eeab89ff
@@ -116,6 +121,8 @@ weapons: [
     splashDamageRadius: 32
     speed: 1
     lifetime: 40
+    despawnSound: explosionArtillery
+    hitSound: explosionArtillery
     despawnEffect: {
      type: ExplosionEffect
      lifetime: 60
@@ -144,13 +151,13 @@ weapons: [
   x: 20
   y: -8
   reload: 15
-  shootY: 18
+  shootY: 16
   shootX: 2
   shootSound: shootScepter
 
   shoot: {
-  shots: 2
-  shotDelay: 10
+  shots: 3
+  shotDelay: 5
   }
 
   bullet: {
@@ -158,7 +165,7 @@ weapons: [
    width: 7
    height: 60
    keepVelocity: false
-   damage: 50
+   damage: 80
    speed: 12
    lifetime: 18
    pierce: true
