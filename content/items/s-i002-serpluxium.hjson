@@ -1,0 +1,12 @@
+name: Serpluxium
+description: Used as advanced fuel and in material production.
+
+cost: 1.25
+color: fb9882
+
+radioactivity: 1.5
+explosiveness: 0.35
+flammability: 0.35
+
+research: thorium
+healthScaling: 0.22
