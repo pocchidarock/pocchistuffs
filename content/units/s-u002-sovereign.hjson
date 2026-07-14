@@ -44,17 +44,17 @@ weapons: [
    width: 28
    height: 28
    keepVelocity: false
-   splashDamage: 500
+   splashDamage: 750
    damage: 350
    splashDamageRadius: 120
    speed: 3
-   lifetime: 120
+   lifetime: 160
    despawnEffect: {
     type: ExplosionEffect
     lifetime: 100
     waveRad: 120
     waveStroke: 9
-    waveLife: 16
+    waveLife: 32
     sparkRad: 100
     smokeRad: 120
     smokeSize: 30
@@ -117,8 +117,8 @@ weapons: [
     scaleLife: true
     hitShake: 1
     keepVelocity: false
-    splashDamage: 140
-    splashDamageRadius: 32
+    splashDamage: 250
+    splashDamageRadius: 48
     speed: 1
     lifetime: 40
     despawnSound: explosionArtillery
@@ -126,13 +126,13 @@ weapons: [
     despawnEffect: {
      type: ExplosionEffect
      lifetime: 60
-     waveRad: 32
+     waveRad: 48
      waveStroke: 2
-     waveLife: 16
-     sparkRad: 30
-     smokeRad: 32
+     waveLife: 22
+     sparkRad: 40
+     smokeRad: 40
      smokeSize: 10
-     smokes: 6
+     smokes: 8
      sparks: 10
      sparkStroke: 2
      sparkColor: eeab89ff
@@ -146,7 +146,8 @@ weapons: [
  {
   name: sovereign-mount
   rotate: true
-  rotationLimit: 30
+  rotateSpeed: 1.6
+  rotationLimit: 35
   recoil: 2
   x: 20
   y: -8
@@ -156,20 +157,21 @@ weapons: [
   shootSound: shootScepter
 
   shoot: {
-  shots: 3
+  shots: 5
   shotDelay: 5
   }
+  inaccuracy: 5
 
   bullet: {
    type: BasicBulletType
    width: 7
    height: 60
    keepVelocity: false
-   damage: 80
+   damage: 150
    speed: 12
    lifetime: 18
    pierce: true
-   pierceCap: 7
+   pierceCap: 3
    hitEffect: hitScepterSecondary
    shootEffect: shootScepterSecondary
   }
