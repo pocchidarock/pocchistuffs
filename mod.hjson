@@ -2,12 +2,12 @@ name: pocchistuffs
 displayName: Pocchi's Stuffs
 author: Pocchi
 description:
-  '''
-   Adds several stuff to serpulo. (future content planned for erekir)
-   (DESC IN PROGRESS)
-  
-  '''
-version: v1
+'''
+Adds several stuff to serpulo. (future content planned for erekir)
+(DESC IN PROGRESS)
+'''
+
+version: v1.1
 minGameVersion: 136
 dependencies: []
-hideBrowser: true
+hideBrowser: false
