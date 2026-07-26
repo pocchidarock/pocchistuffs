@@ -1,4 +1,4 @@
-[red]*WARNING, MOD IS CURRENTLY UNFINISHED.*[]
+*WARNING, MOD IS CURRENTLY UNFINISHED.*
 
 <img width="200" height="200" alt="icon" src="https://github.com/user-attachments/assets/c1034d72-4247-49e8-9f21-82c31ded787c" />
 
