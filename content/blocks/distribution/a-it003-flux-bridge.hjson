@@ -1,0 +1,23 @@
+type: ItemBridge
+name: Flux Bridge
+description: Transports items instantly over long distances. Has longer range than a phase conveyor.
+
+range: 24
+transportTime: 0.8
+arrowPeriod: 0.45
+arrowSpacing: 5
+arrowTimeScl: 2
+bridgeWidth: 8
+hasPower: true
+pulse: true
+consumes: {
+power: 0.65
+}
+
+requirements: [
+a-i003-fluxite/8
+a-i001-pallarite/14
+silicon/10
+graphite/14
+]
+research: a-it002-fluxconveyor

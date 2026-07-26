@@ -1,0 +1,13 @@
+type: Unloader
+name: Flux Unloader
+description: Unloads the selected item from nearby blocks. Faster than a standard unloader.
+
+speed: 2
+group: transportation
+
+requirements: [
+a-i003-fluxite/20
+titanium/45
+silicon/50
+]
+research: a-it002-fluxconveyor
