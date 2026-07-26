@@ -1,0 +1,121 @@
+type: missile
+shadowElevation: 0.0
+name: War Mine
+
+hidden: true
+health: 4500
+armor: 85
+engineSize: 0
+flying: false
+isEnemy: false
+useUnitCap: false
+allowedInPayloads: false
+playerControllable: false
+
+faceTarget: false
+targetable: true
+fogRadius: 0
+lightRadius: 8
+lightOpacity: 0.2
+
+deathSound: none
+deathExplosionEffect: none
+
+speed: 0
+rotateSpeed: 0.5
+hitSize: 24
+
+weapons: [
+ {
+ mirror: false
+ x: 0
+ y: 0
+ shootOnDeath: true
+ shootCone: 360
+  bullet: {
+   type: ExplosionBulletType
+   splashDamage: 850
+   scaledSplashDamage: true
+   splashDamageRadius: 120
+   despawnSound: largeExplosion
+   despawnEffect: {
+    type: ExplosionEffect
+    lifetime: 120
+    sparkColor: ffa566ff
+    waveColor: ffa566ff
+    waveLife: 30
+    waveStroke: 8
+    waveRad: 120
+    SparkStroke: 18
+    sparkRad: 140
+    sparkSize: 32
+    smokeSize: 35
+    smokeRad: 130
+    smokes: 15
+    sparks: 25
+   }
+   fragBullets: 6
+   fragBullet: {
+    type: BulletType
+    lifetime: 90
+    speed: 1.1
+    collidesTiles: false
+    collides: false
+    scaleLife: true
+
+    splashDamage: 400
+    scaledSplashDamage: true
+    splashDamageRadius: 80
+    despawnSound: largeExplosion
+    despawnEffect: {
+     type: ExplosionEffect
+     lifetime: 80
+     sparkColor: ffa566ff
+     waveColor: ffa566ff
+     waveLife: 20
+     waveStroke: 5
+     waveRad: 80
+     SparkStroke: 15
+     sparkRad: 100
+     sparkSize: 28
+     smokeSize: 28
+     smokeRad: 75
+     smokes: 12
+     sparks: 22
+    }
+    fragBullets: 2
+    fragBullet: {
+     type: BulletType
+     lifetime: 80
+     speed: 1.8
+     collidesTiles: false
+     collides: false
+     scaleLife: true
+
+     splashDamage: 60
+     scaledSplashDamage: true
+     splashDamageRadius: 36
+     despawnSound: largeExplosion
+     despawnEffect: {
+      type: ExplosionEffect
+      lifetime: 40
+      sparkColor: ffa566ff
+      waveColor: ffa566ff
+      waveLife: 10
+      waveStroke: 3
+      waveRad: 36
+      SparkStroke: 12
+      sparkRad: 40
+      sparkSize: 14
+      smokeSize: 14
+      smokeRad: 34
+      smokes: 12
+      sparks: 22
+     }
+    }
+
+   }
+  }
+
+ }
+]

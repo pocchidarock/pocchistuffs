@@ -1,0 +1,12 @@
+name: Fluxite
+description: Used in complex electronics and accelerating structures.
+
+cost: 1.38
+color: d6fdff
+
+radioactivity: 1
+explosiveness: 0.8
+charge: 1.25
+
+research: phase-fabric
+healthScaling: 0.3

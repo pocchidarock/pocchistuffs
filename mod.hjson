@@ -7,7 +7,7 @@ description:
    (DESC IN PROGRESS)
   
   '''
-version: 0.0.1
+version: v1
 minGameVersion: 136
 dependencies: []
 hideBrowser: true

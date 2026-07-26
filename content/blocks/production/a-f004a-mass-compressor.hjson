@@ -1,0 +1,53 @@
+type: GenericCrafter
+name: Mass-Compressor
+description: Produces plastanium from titanium and oil using blast compound for additional pressure.
+size: 3
+
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 30
+liquidCapacity: 90
+
+craftTime: 48
+craftEffect: formsmoke
+updateEffect: plasticburn
+
+consumes: {
+  power: 5.5
+  items: {
+    items: [
+      titanium/5
+      blast-compound/1
+    ]
+  }
+  liquid: {
+    liquid: oil
+    amount: 0.4
+  }
+}
+
+outputItem: plastanium/3
+
+category: crafting
+
+research: plastanium-compressor
+
+requirements: [
+  lead/200
+  thorium/45
+  plastanium/60
+  silicon/125
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawFade
+    }
+  ]
+}

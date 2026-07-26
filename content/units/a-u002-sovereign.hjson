@@ -1,0 +1,183 @@
+type: mech
+name: Sovereign
+description: Fires volatile shells and constant bullet barrages at enemy targets.
+
+research: a-u001-monarch
+health: 350000
+armor: 38
+
+speed: 0.15
+rotateSpeed: 0.7
+hitSize: 58
+
+stepShake: 1.2
+stepSound: walkerStepHeavy
+stepSoundPitch: .6
+stepSoundVolume: 0.7
+mechFrontSway: 3.5
+mechSideSway: 1.2
+drownTimeMultiplier: 5
+
+weapons: [
+ {
+  name: sovereign-cannon
+  recoil: 8
+  x: 41.5
+  reload: 350
+  shake: 6
+  shootY: 32
+  shootSound: shootRipple
+  shootSoundVolume: 1.5
+  top: false
+  shootEffect: shootBig
+
+  bullet: {
+   type: ArtilleryBulletType
+   status: blasted
+   despawnSound: explosionReactor
+   hitSound: explosionReactor
+   hitSoundPitch: 1.5
+   hitSoundVolume: 0.9
+   shake: 6
+
+   sprite: pocchistuffs-round-bullet
+   backColor: e9665bff
+   frontColor: eeab89ff
+   width: 28
+   height: 28
+   keepVelocity: false
+   splashDamage: 750
+   damage: 350
+   splashDamageRadius: 120
+   speed: 3
+   lifetime: 160
+   despawnEffect: {
+    type: ExplosionEffect
+    lifetime: 100
+    waveRad: 120
+    waveStroke: 9
+    waveLife: 32
+    sparkRad: 100
+    smokeRad: 140
+    smokeSize: 40
+    smokes: 18
+    sparks: 16
+    sparkStroke: 3
+    sparkSize: 6
+    sparkColor: e9665bff
+    waveColor: e9665bff
+    smokeColor: e9665b80
+   }
+   despawnSound: none
+   shootEffect: {
+    type: ParticleEffect
+    particles: 8
+    cone: 7
+    length: 130
+    colorFrom: 7f7f7f
+    colorTo: e9665b00
+    interp: pow3Out
+    sizeFrom: 1
+    sizeTo: 8
+    layer: 109
+    lifetime: 40
+   }
+   smokeEffect: {
+    type: ParticleEffect
+    particles: 6
+    cone: 60
+    length: 45
+    colorFrom: e9665bff
+    colorTo: e9665b00
+    interp: pow3Out
+    sizeFrom: 16
+    lifetime: 75
+   }
+   trailColor: e9665bff
+   trailInterval: 3
+   trailRotation: true
+   trailLength: 50
+   trailWidth: 6
+   trailEffect: {
+    type: ParticleEffect
+    particles: 2
+    cone: 20
+    length: -100
+    colorFrom: e9665bff
+    colorTo: e9665b00
+    interp: pow3Out
+    sizeFrom: 8
+    lifetime: 60
+   }
+   bulletInterval: 4
+   intervalBullets: 1
+   intervalDelay: 30
+   intervalBullet: {
+    type: BulletType
+    status: blasted
+    collidesTiles: false
+    collides: false
+    collidesAir: false
+    scaleLife: true
+    hitShake: 1
+    keepVelocity: false
+    splashDamage: 250
+    splashDamageRadius: 48
+    speed: 1
+    shake: 2.8
+    lifetime: 40
+    despawnSound: explosionArtillery
+    hitSound: explosionArtillery
+    despawnEffect: {
+     type: ExplosionEffect
+     lifetime: 20
+     waveRad: 48
+     waveStroke: 2
+     waveLife: 20
+     sparkRad: 40
+     smokeRad: 40
+     smokeSize: 10
+     smokes: 8
+     sparks: 10
+     sparkStroke: 2
+     sparkColor: e9665bff
+    }
+    scaledSplashDamage: true
+    hittable: false
+   }
+  }
+ }
+ {
+  name: sovereign-mount
+  rotate: true
+  rotateSpeed: 1.6
+  rotationLimit: 35
+  recoil: 2
+  x: 20
+  y: -8
+  reload: 15
+  shootY: 16
+  shootX: 2
+  shootSound: shootScepter
+
+  shoot: {
+  shots: 5
+  shotDelay: 5
+  }
+  inaccuracy: 5
+
+  bullet: {
+   type: BasicBulletType
+   width: 7
+   height: 60
+   keepVelocity: false
+   damage: 150
+   speed: 12
+   lifetime: 18
+   pierce: true
+   pierceCap: 3
+   hitEffect: hitScepterSecondary
+   shootEffect: shootScepterSecondary
+  }
+ }
+]

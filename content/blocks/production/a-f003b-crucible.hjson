@@ -1,0 +1,58 @@
+type: AttributeCrafter
+name: Crucible
+description: Smelts sand and lead into metaglass, using pyratite and slag as additional heat sources. More efficient in hot locations.
+
+size: 4
+
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 50
+liquidCapacity: 120
+
+craftTime: 45
+craftEffect: smeltsmoke
+
+boostScale: 0.14
+
+consumes: {
+ power: 9.2
+ items: [
+  lead/7
+  sand/7
+  pyratite/3
+ ]
+ liquids: [
+  slag/0.3
+ ]
+}
+
+outputItem: metaglass/12
+
+category: crafting
+
+research: a-f003a-furnace
+
+requirements: [
+ metaglass/320
+ a-i001-pallarite/200
+ silicon/195
+ plastanium/60
+ a-i002-serpluxium/145
+]
+
+drawer: {
+ type: DrawMulti
+ drawers: [
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawFlame
+  flameColor: ffc099
+  flameRadius: 6
+  lightRadius: 120
+  flameRadiusIn: 3.5
+  }
+ ]
+}

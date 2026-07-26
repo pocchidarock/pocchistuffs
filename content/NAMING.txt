@@ -1,0 +1,53 @@
+FORMAT
+------
+[planet]-[category][number][tier]-[name]
+
+- planet  : Content origin planet.
+- category: Content category identifier.
+- number  : Content family ID (001, 002, 003, ...).
+- tier    : Upgrade tier (a, b, c, ...). Omit if the content has no tiers.
+- name    : Internal content name (lowercase, no spaces).
+
+PLANETS
+-------
+a = Serpulo
+b = Erekir
+
+
+CATEGORIES
+----------
+
+Blocks
+------
+-t   = Turrets
+-d   = Drills
+-it  = Item Blocks
+-li  = Liquid Blocks
+-p   = Power
+-w   = Walls
+-f   = Factories
+-un  = Unit Blocks
+-s   = Storage
+-x   = Logic
+
+Content
+-------
+-i   = Items
+-l   = Liquids
+-u   = Units
+
+
+NUMBERING
+---------
+- Each number represents a content family.
+- Numbering is permanent and should not be changed once assigned.
+- Tiered variants share the same family number.
+
+
+TIERS
+-----
+- Omit the tier if the content has no upgrades.
+- Use:
+    a = Tier 1
+    b = Tier 2
+    c = Tier 3
