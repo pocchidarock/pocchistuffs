@@ -1,4 +1,4 @@
-<img width="150" height="150" alt="icon" src="https://github.com/user-attachments/assets/c3f2db4f-5df4-4da4-8cb4-84a3c61d1ab4" />
+<img width="200" height="200" alt="icon" src="https://github.com/user-attachments/assets/1cff4e93-bff5-479d-8ca2-06c2f2c149dc" />
 
 A mod made for the sole purpose of fully conquering serpulo. 
 
