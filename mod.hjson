@@ -6,7 +6,7 @@ description:
 Adds several stuff to serpulo. (future content planned for erekir)
 (DESC IN PROGRESS)
 '''
-subtitle: "[#6ecdec[]]Version 2.2"
+subtitle: "[#f695d5[]]Version 2.2"
 version: v1.1
 minGameVersion: 136
 dependencies: []
