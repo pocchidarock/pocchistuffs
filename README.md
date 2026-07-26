@@ -8,6 +8,9 @@ A mod made for the sole purpose of fully conquering serpulo.
 (i have a major skill issue cuz i cant finish those damned numbered sectors  **IM LOOKING AT YOU SECTOR 27.**)
 
 Currently adds:
+
 • Extra factory, drill tiers
+
 • 3 New materials to serpulo
+
 • Dagger tier 6 and 7
