@@ -1,0 +1,54 @@
+type: GenericCrafter
+name: Phase Mill
+description: Synthesizes phase fabric from sand and thorium. Requires cryofluid coolant.
+size: 4
+
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 50
+liquidCapacity: 80
+
+craftTime: 60
+craftEffect: smeltsmoke
+
+consumes: {
+ power: 12
+ items: [
+  sand/26
+  thorium/12
+ ]
+ liquids: [
+  cryofluid/0.2
+ ]
+}
+
+outputItem: phase-fabric/6
+
+category: crafting
+
+research: a-f005a-phase-loom
+
+requirements: [
+ lead/800
+ plastanium/350
+ a-i003-fluxite/90
+ silicon/450
+ a-i001-pallarite/200
+]
+
+drawer: {
+ type: DrawMulti
+ drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawWeave
+  }
+  {
+  type: DrawDefault
+  }
+ ]
+}
