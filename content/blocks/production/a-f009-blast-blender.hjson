@@ -35,8 +35,8 @@ research: blast-mixer
 
 requirements: [
  plastanium/60
- titanium/75
- copper/80
+ titanium/40
+ lead/80
  silicon/50
 ]
 
