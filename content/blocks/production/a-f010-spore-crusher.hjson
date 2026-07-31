@@ -1,0 +1,60 @@
+type: GenericCrafter
+name: Spore Crusher
+description: Compresses spore pods into oil. More efficient than a spore press.
+size: 3
+
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 20
+liquidCapacity: 120
+
+craftTime: 30
+ambientSound: loopMachineSpin
+ambientSoundVolume: .2
+
+consumes: {
+ power: 2.4
+ items: [
+  spore-pod/3
+ ]
+}
+
+outputLiquid: oil/0.8
+
+category: crafting
+
+research: spore-press
+
+requirements: [
+ a-i001-pallarite/65
+ metaglass/40
+ lead/120
+ silicon/80
+]
+
+drawer: {
+ type: DrawMulti
+ drawers: [
+ {
+ type: DrawRegion
+ suffix: -bottom
+ }
+ {
+ type: DrawPistons
+ sides: 8
+ sinMag: 1
+ }
+ {
+ type: DrawDefault
+ }
+ {
+ type: DrawLiquidRegion
+ drawLiquid: oil
+ }
+ {
+ type: DrawRegion
+ suffix: -top
+ }
+ ]
+}

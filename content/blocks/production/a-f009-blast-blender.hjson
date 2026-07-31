@@ -1,6 +1,6 @@
 type: GenericCrafter
-name: Pyratite Blender (temp sprite)
-description: Produces blast compound from pyratite and spore pods. Requires water.
+name: Blast Blender
+description: Produces blast compound from pyratite and spore pods. Requires water as coolant.
 size: 3
 
 hasPower: true

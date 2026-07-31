@@ -1,6 +1,6 @@
 type: GenericCrafter
-name: Pyratite Blender (temp sprite)
-description: Mixes coal, lead, sand into pyratite. Requires water.
+name: Pyratite Blender
+description: Mixes coal, lead, and sand into pyratite. Requires water as coolant.
 size: 3
 
 hasPower: true
