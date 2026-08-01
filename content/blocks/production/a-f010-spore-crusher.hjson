@@ -10,11 +10,9 @@ itemCapacity: 20
 liquidCapacity: 120
 
 craftTime: 30
-ambientSound: loopMachineSpin
-ambientSoundVolume: .2
 
 consumes: {
- power: 2.4
+ power: 3
  items: [
   spore-pod/3
  ]
@@ -44,6 +42,7 @@ drawer: {
  type: DrawPistons
  sides: 8
  sinMag: 1
+ sinScl: 2
  }
  {
  type: DrawDefault

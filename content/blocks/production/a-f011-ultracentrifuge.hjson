@@ -1,0 +1,37 @@
+type: GenericCrafter
+name: Ultracentrifuge
+description: Transforms oil into coal. Requires water as coolant.
+size: 3
+
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 20
+liquidCapacity: 120
+
+craftTime: 10
+updateEffect: coalSmeltsmoke
+
+consumes: {
+ power: 3
+ liquids: [
+  oil/.25
+  water/0.1
+ ]
+}
+
+outputItem: coal/1
+
+category: crafting
+
+research: coal-centrifuge
+
+requirements: [
+ plastanium/80
+ thorium/45
+ graphite/75
+ lead/120
+]
+
+drawer: {
+}
