@@ -5,7 +5,7 @@
 
 A mod made for the sole purpose of fully conquering serpulo. 
 
-<sub>have a major skill issue so i cant finish those damned numbered sectors  **IM LOOKING AT YOU SECTOR 27.**</sub>
+<sub>have a major skill issue so i cant finish those damned numbered sectors.  **IM LOOKING AT YOU SECTOR 27.**</sub>
 
 
 **Currently adds:**
