@@ -9,7 +9,7 @@ hasLiquids: true
 itemCapacity: 30
 liquidCapacity: 80
 
-ambientSound: electricHum
+ambientSound: loopElectricHum
 ambientSoundVolume: .3
 
 craftTime: 120
