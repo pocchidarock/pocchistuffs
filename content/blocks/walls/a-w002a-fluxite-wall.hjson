@@ -1,0 +1,24 @@
+type: Wall
+name: Fluxite Wall
+description: Protects structures from enemy projectiles. Has properties of plastanium, surge, and phase walls.
+size: 1
+
+health: 1200
+lightningChance: 0.15
+lightningColor: d6fdffff
+lightningLength: 20
+lightningDamage: 30
+flashHit: true
+chanceDeflect: 8
+insulated: true
+absorbLasers: true
+schematicPriority: 10
+
+category: defense
+
+research: surge-wall
+
+requirements: [
+ a-i003-fluxite/5
+ a-i001-pallarite/2
+]

@@ -1,0 +1,24 @@
+type: Wall
+name: Large Fluxite Wall
+description: Protects structures from enemy projectiles. Has properties of plastanium, surge, and phase walls.
+size: 2
+
+health: 5000
+lightningChance: 0.15
+lightningColor: d6fdffff
+lightningLength: 20
+lightningDamage: 30
+flashHit: true
+chanceDeflect: 8
+insulated: true
+absorbLasers: true
+schematicPriority: 10
+
+category: defense
+
+research: a-w002a-fluxite-wall
+
+requirements: [
+ a-i003-fluxite/20
+ a-i001-pallarite/8
+]

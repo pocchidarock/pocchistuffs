@@ -1,0 +1,15 @@
+type: Wall
+name: Serpluxium Wall
+description: Protects structures from enemy projectiles.
+size: 1
+
+health: 7200
+armor: 8
+
+category: defense
+
+research: a-w001a-serpluxium-wall
+
+requirements: [
+ a-i002-serpluxium/24
+]
