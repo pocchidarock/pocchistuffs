@@ -1,6 +1,6 @@
 <img width="200" height="200" alt="icon" src="https://github.com/user-attachments/assets/c1034d72-4247-49e8-9f21-82c31ded787c" />
-<sub>personal mod</sub>
 
+<sub>personal mod</sub>
 A mod made for the sole purpose of fully conquering serpulo. 
 
 <sub>have a major skill issue so i cant finish those damned numbered sectors.  **IM LOOKING AT YOU SECTOR 27.**</sub>
