@@ -1,7 +1,7 @@
 type: Wall
 name: Serpluxium Wall
 description: Protects structures from enemy projectiles.
-size: 1
+size: 2
 
 health: 7200
 armor: 8
