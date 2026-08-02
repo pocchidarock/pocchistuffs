@@ -10,7 +10,7 @@ itemCapacity: 30
 liquidCapacity: 80
 
 ambientSound: loopElectricHum
-ambientSoundVolume: .3
+ambientSoundVolume: .4
 
 craftTime: 120
 craftEffect: {
