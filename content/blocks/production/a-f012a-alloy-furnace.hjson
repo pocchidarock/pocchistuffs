@@ -1,0 +1,47 @@
+type: GenericCrafter
+name: Alloy Furnace
+description: Smelts titanium and graphite into pallarite.
+size: 2
+
+hasPower: true
+hasItems: true
+itemCapacity: 10
+
+craftTime: 120
+craftEffect: smeltsmoke
+
+consumes: {
+ power: 1.5
+ items: [
+ graphite/3
+ titanium/2
+ ]
+}
+
+outputItem: a-i001-pallarite/2
+
+category: crafting
+
+research: graphite-press
+
+requirements: [
+ graphite/40
+ silicon/50
+ titanium/25
+]
+
+drawer: {
+ type: DrawMulti
+ drawers: [
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawFlame
+  flameColor: ff7b90
+  flameRadius: 2
+  flameRadiusIn: 1.2
+  lightRadius: 45
+  }
+ ]
+}
