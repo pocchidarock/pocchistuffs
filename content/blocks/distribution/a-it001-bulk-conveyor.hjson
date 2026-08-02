@@ -1,10 +1,10 @@
 type: StackConveyor
 name: Bulk Conveyor
-description: Transports items in batches. Carries more than a plastanium conveyor but is slower.
+description: Transports items in batches. Carries more than a plastanium conveyor.
 
 health: 120
-speed: 0.04
-itemCapacity: 50
+speed: 0.067
+itemCapacity: 30
 
 requirements: [
 a-i002-serpluxium/1
