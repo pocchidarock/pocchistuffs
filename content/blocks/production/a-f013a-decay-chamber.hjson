@@ -7,17 +7,22 @@ hasPower: true
 hasItems: true
 itemCapacity: 30
 
-craftTime: 150
+craftTime: 120
 craftEffect: {
+ type: RadialEffect
+ effect: {
   type: ParticleEffect
-  colorFrom: f9a992ff
-  colorTo: f9a99200
-  length: 20
-  particles: 15
+  colorTo: c6737380
+  colorFrom: f9a99280
+  length: 8
+  particles: 5
   cone: 360
   interp: pow5Out
   lifetime: 80
-  sizeFrom: 4
+  sizeFrom: 3
+ }
+ rotationOffset: 45
+ lengthOffset: 5
 }
 
 consumes: {
@@ -42,22 +47,4 @@ requirements: [
 ]
 
 drawer: {
-  type: DrawMulti
-  drawers: [
-    {
-      type: DrawDefault
-    }
-    {
-      type: DrawParticles
-      particles: 32
-      particleSize: 3
-      color: f9a992
-      reverse: true
-      particleRad: 16
-    }
-    {
-      type: DrawRegion
-      suffix: -top
-    }
-  ]
 }
