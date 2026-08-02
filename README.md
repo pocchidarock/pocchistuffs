@@ -1,5 +1,3 @@
-<sub>*personal mod*</sub>
-
 <img width="200" height="200" alt="icon" src="https://github.com/user-attachments/assets/c1034d72-4247-49e8-9f21-82c31ded787c" />
 
 A mod made for the sole purpose of fully conquering serpulo. 
@@ -14,3 +12,6 @@ A mod made for the sole purpose of fully conquering serpulo.
 • 3 New materials to serpulo
 
 • Dagger tier 6 and 7
+
+
+<sub>*personal mod*</sub>
