@@ -16,7 +16,7 @@ schematicPriority: 10
 
 category: defense
 
-research: surge-wall
+research: phase-wall
 
 requirements: [
  a-i003-fluxite/5
