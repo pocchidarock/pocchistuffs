@@ -1,0 +1,23 @@
+type: SolidPump
+name: Water Rig
+description: Extracts groundwater faster than a standard water extractor. Used in locations with no surface water available.
+category: production
+size: 3
+
+result: water
+pumpAmount: .4
+liquidCapacity: 120
+attribute: water
+rotateSpeed: 4
+
+consumes: {
+power: 4
+}
+
+requirements: [
+lead/200
+metaglass/125
+thorium/80
+silicon/100
+]
+research: water-extractor

@@ -1,0 +1,33 @@
+type: Fracker
+name: Oil Rig
+description: Uses larger amounts of power, sand. and water to drill for oil.
+category: production
+size: 4
+
+result: oil
+pumpAmount: .8
+liquidCapacity: 180
+attribute: oil
+rotateSpeed: 3
+itemUseTime: 40
+baseEfficiency: 0
+updateEffect: pulverize
+
+consumes: {
+power: 5.5
+liquids: [
+    water/.5
+]
+items: [
+    sand/2
+]
+}
+
+requirements: [
+copper/400
+titanium/350
+graphite/500
+a-i002-serpluxium/115
+silicon/250
+]
+research: oil-extractor

@@ -20,14 +20,12 @@ updateEffect: pulverizeRed
 liquidBoostIntensity: 2
 consumes: {
 power: 5
- liquids: [
-  {
-  liquid: water
-  amount: 1.5
-  booster: true
-  optional: true
-  }
- ]
+    liquid: {
+    liquid: water
+    amount: .3
+    booster: true
+    optional: true
+    }
 }
 
 requirements: [

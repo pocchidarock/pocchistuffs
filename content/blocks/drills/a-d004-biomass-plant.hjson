@@ -1,0 +1,58 @@
+type: AttributeCrafter
+name: Biomass Plant
+description: Cultivates concentrations of atmospheric spores into spore pods.
+size: 3
+details: A larger cultivator that produces even more biomass. Most likely the main cause of the spore infestation.
+
+hasLiquids: true
+hasItems: true
+hasPower: true
+liquidCapacity: 120
+itemCapacity: 30
+attribute: spores
+craftEffect: none
+craftTime: 60
+
+ambientSound: loopCultivator
+ambientSoundVolume: 0.085
+
+consumes: {
+power: 3
+liquids: [
+water/.6
+]
+}
+outputItem: spore-pod/3
+category: production
+
+requirements: [
+a-i001-pallarite/80
+thorium/100
+plastanium/75
+silicon/50
+]
+research: cultivator
+
+drawer: {
+type: DrawMulti
+drawers: [
+    {
+    type: DrawRegion
+    suffix: -bottom
+    }
+    {
+    type: DrawLiquidTile
+    drawLiquid: water
+    }
+    {
+    type: DrawDefault
+    }
+    {
+    type: DrawCultivator
+    }
+    {
+    type: DrawRegion
+    suffix: -top
+    }
+]
+}
