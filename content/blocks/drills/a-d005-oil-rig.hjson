@@ -5,21 +5,21 @@ category: production
 size: 4
 
 result: oil
-pumpAmount: .8
+pumpAmount: .9
 liquidCapacity: 180
 attribute: oil
 rotateSpeed: 3
-itemUseTime: 40
+itemUseTime: 80
 baseEfficiency: 0
 updateEffect: pulverize
 
 consumes: {
 power: 5.5
 liquids: [
-    water/.5
+    water/.35
 ]
 items: [
-    sand/2
+    sand/3
 ]
 }
 
