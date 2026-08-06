@@ -1,0 +1,50 @@
+type: GenericCrafter
+
+size: 3
+name: Decay Chamber
+description: Rapidly decays materials to form serpluxium.
+hasPower: true
+hasItems: true
+itemCapacity: 30
+
+craftTime: 120
+craftEffect: {
+ type: RadialEffect
+ effect: {
+  type: ParticleEffect
+  colorTo: c6737380
+  colorFrom: f9a99280
+  length: 8
+  particles: 5
+  cone: 360
+  interp: pow5Out
+  lifetime: 80
+  sizeFrom: 3
+ }
+ rotationOffset: 45
+ lengthOffset: 5
+}
+
+consumes: {
+  power: 3
+  items: {
+    items: [
+      thorium/3
+      lead/3
+    ]
+  }
+}
+outputItem: a-i002-serpluxium/1
+
+category: crafting
+research: a-f012a-alloy-furnace
+
+requirements: [
+  silicon/75
+  thorium/120
+  metaglass/45
+  a-i001-pallarite/100
+]
+
+drawer: {
+}

@@ -1,0 +1,54 @@
+type: GenericCrafter
+name: Surge Foundry
+description: Fuses titanium, lead, silicon, and copper into surge alloy. Uses slag as an additional heat source.
+size: 4
+
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 40
+liquidCapacity: 120
+
+craftTime: 120
+craftEffect: smeltsmoke
+
+consumes: {
+ power: 10
+ items: [
+  copper/12
+  lead/18
+  titanium/6
+  silicon/12
+ ]
+ liquids: [
+  slag/0.4
+ ]
+}
+
+outputItem: surge-alloy/6
+
+category: crafting
+
+research: surge-smelter
+
+requirements: [
+ lead/200
+ thorium/225
+ silicon/180
+ surge-alloy/80
+]
+
+drawer: {
+ type: DrawMulti
+ drawers: [
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawFlame
+  flameRadius: 4.5
+  lightRadius: 90
+  flameRadiusIn: 3
+  }
+ ]
+}

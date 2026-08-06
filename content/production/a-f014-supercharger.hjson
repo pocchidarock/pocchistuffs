@@ -1,0 +1,80 @@
+type: GenericCrafter
+name: Supercharger
+description: Supercharges silicon, pallarite, and phase fabric into fluxite. Requires extensive coolant.
+size: 4
+
+hasPower: true
+hasItems: true
+hasLiquids: true
+itemCapacity: 30
+liquidCapacity: 80
+
+ambientSound: loopElectricHum
+ambientSoundVolume: .4
+
+craftTime: 120
+craftEffect: {
+ type: ExplosionEffect
+ sparkColor: e7feffff
+ smokes: 0
+ interp: pow5Out
+ lifetime: 60
+ sparkStroke: 3
+ sparks: 16
+ sparkRad: 24
+ waveRad: 0
+}
+updateEffect: {
+ type: ParticleEffect
+ colorTo: 9583f1ff
+ colorFrom: e7feffff
+ length: 12
+ particles: 3
+ cone: 360
+ interp: pow5Out
+ lifetime: 30
+ line: true
+ strokeFrom: 1.5
+ sizeFrom: 3
+}
+
+consumes: {
+ power: 12
+ items: {
+  items: [
+   silicon/5
+   a-i001-pallarite/8
+   phase-fabric/2
+  ]
+ }
+ liquids: [
+  a-l001-supercoolant/.3
+ ]
+}
+
+outputItem: a-i003-fluxite/6
+
+category: crafting
+
+research: a-f013a-decay-chamber
+
+requirements: [
+ copper/380
+ silicon/200
+ surge-alloy/180
+ a-i001-pallarite/300
+ thorium/250
+ lead/200
+]
+
+drawer: {
+ type: DrawMulti
+ drawers: [
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawFade
+  }
+ ]
+}

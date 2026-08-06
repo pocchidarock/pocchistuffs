@@ -1,0 +1,50 @@
+type: AttributeCrafter
+name: Furnace
+description: Smelts sand and lead into metaglass, using pyratite as an additional heat source. More efficient in hot locations.
+size: 3
+
+hasPower: true
+hasItems: true
+itemCapacity: 30
+
+craftTime: 75
+craftEffect: smeltsmoke
+
+boostScale: 0.16
+
+consumes: {
+  power: 4.8
+  items: {
+    items: [
+      sand/3
+      lead/3
+      pyratite/2
+    ]
+  }
+}
+
+outputItem: metaglass/8
+
+category: crafting
+
+research: kiln
+
+requirements: [
+  metaglass/110
+  graphite/80
+  silicon/90
+  plastanium/40
+]
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawFlame
+      flameColor: ffc099
+    }
+  ]
+}
