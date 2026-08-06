@@ -1,6 +1,6 @@
 type: AttributeCrafter
 name: Alloy Forge
-description: Smelts titanium and graphite into pallarite using slag as an additional heat source. More efficient in hot locations.
+description: Smelts titanium and graphite into pallarite using pyratite as an additional heat source. Produces slag as a byproduct.
 size: 3
 
 hasPower: true
@@ -19,13 +19,12 @@ consumes: {
  items: [
  graphite/6
  titanium/5
- ]
- liquids: [
- slag/.15
+ pyratite/2
  ]
 }
 
 outputItem: a-i001-pallarite/6
+outputLiquid: slag/.15
 
 category: crafting
 
