@@ -1,0 +1,16 @@
+type: LiquidRouter
+name: Liquid Reservoir
+description: Stores massive amounts of liquids. Outputs to all sides, similarly to a liquid router.
+category: liquid
+size: 4
+
+liquidCapacity: 4000
+health: 920
+solid: true
+
+requirements: [
+metaglass/215
+a-i001-pallarite/180
+thorium/120
+]
+research: liquid-tank

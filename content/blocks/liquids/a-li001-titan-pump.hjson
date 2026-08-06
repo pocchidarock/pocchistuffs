@@ -1,0 +1,23 @@
+type: Pump
+name: Titan Pump
+description: The biggest pump. Pumps liquid faster than an impulse pump.
+category: liquid
+size: 4
+
+pumpAmount: .35
+hasPower: true
+liquidCapacity: 480
+
+consumes: {
+power: 3
+}
+
+requirements: [
+copper/400
+metaglass/250
+a-i001-pallarite/180
+thorium/225
+silicon/200
+surge-alloy/80
+]
+research: impulse-pump
