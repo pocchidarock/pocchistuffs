@@ -42,7 +42,7 @@ research: a-f012a-alloy-furnace
 requirements: [
   silicon/75
   thorium/120
-  metaglass/45
+  plastanium/45
   a-i001-pallarite/100
 ]
 

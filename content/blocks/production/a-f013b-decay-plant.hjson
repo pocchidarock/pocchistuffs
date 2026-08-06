@@ -65,7 +65,7 @@ research: a-f013a-decay-chamber
 requirements: [
   silicon/200
   a-i002-serpluxium/120
-  plastanium/40
+  plastanium/80
   a-i001-pallarite/240
   phase-fabric/90
 ]
