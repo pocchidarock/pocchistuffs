@@ -12,7 +12,7 @@ Content already added:
 - Tier 6-7 units
 '''
 subtitle: "[#f695d5[]]Factories, Factories!"
-version: v0.4
+version: v0.5
 minGameVersion: 136
 dependencies: []
 hideBrowser: false
