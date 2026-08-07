@@ -1,0 +1,17 @@
+type: PowerNode
+
+size: 1
+name: Reinforced Node
+description: A power node that has improved health and range but fewer connections.
+
+health: 260
+category: power
+research: power-node
+
+maxNodes: 6
+laserRange: 8
+
+requirements: [
+  lead/6
+  a-i001-pallarite/2
+]

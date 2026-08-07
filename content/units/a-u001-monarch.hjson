@@ -35,8 +35,6 @@ weapons: [
 
   bullet: {
    type: BulletType
-   width: 20
-   height: 20
    pierce: true
    pierceBuilding: true
    pierceCap: 3

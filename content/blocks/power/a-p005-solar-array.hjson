@@ -1,0 +1,17 @@
+type: SolarGenerator
+
+size: 5
+name: Solar Array
+description: Multiple solar panels provide small amounts of power from the sun. More efficient than a large solar panel.
+
+powerProduction: 7.2
+
+category: power
+//research
+
+requirements: [
+  lead/160
+  silicon/180
+  phase-fabric/40
+  surge-alloy/25
+]

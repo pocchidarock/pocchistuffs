@@ -1,0 +1,20 @@
+type: Battery
+
+size: 2
+name: Medium Battery
+description: Stores power in times of surplus energy. Outputs power in times of deficit. Higher capacity than a regular battery.
+
+category: power
+research: battery
+
+baseExplosiveness: 3
+
+consumes: {
+  powerBuffered: 22000
+}
+
+requirements: [
+  copper/20
+  lead/30
+  silicon/15
+]

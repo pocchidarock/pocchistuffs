@@ -17,7 +17,6 @@ craftEffect: {
  type: ExplosionEffect
  sparkColor: e7feffff
  smokes: 0
- interp: pow5Out
  lifetime: 60
  sparkStroke: 3
  sparks: 16

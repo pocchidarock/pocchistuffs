@@ -46,9 +46,8 @@ weapons: [
     waveLife: 30
     waveStroke: 8
     waveRad: 120
-    SparkStroke: 18
+    sparkStroke: 18
     sparkRad: 140
-    sparkSize: 32
     smokeSize: 35
     smokeRad: 130
     smokes: 15
@@ -75,9 +74,8 @@ weapons: [
      waveLife: 20
      waveStroke: 5
      waveRad: 80
-     SparkStroke: 15
+     sparkStroke: 15
      sparkRad: 100
-     sparkSize: 28
      smokeSize: 28
      smokeRad: 75
      smokes: 12
@@ -104,9 +102,8 @@ weapons: [
       waveLife: 10
       waveStroke: 3
       waveRad: 36
-      SparkStroke: 12
+      sparkStroke: 12
       sparkRad: 40
-      sparkSize: 14
       smokeSize: 14
       smokeRad: 34
       smokes: 12

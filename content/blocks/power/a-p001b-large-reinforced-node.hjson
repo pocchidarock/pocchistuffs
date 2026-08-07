@@ -1,0 +1,18 @@
+type: PowerNode
+
+size: 2
+name: Large Reinforced Node
+description: A large power node that has improved health and range but fewer connections.
+
+health: 420
+category: power
+research: a-p001a-reinforced-node
+
+maxNodes: 10
+laserRange: 18
+
+requirements: [
+  lead/8
+  a-i001-pallarite/4
+  silicon/4
+]

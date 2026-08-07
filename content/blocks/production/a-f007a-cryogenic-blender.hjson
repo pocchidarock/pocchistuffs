@@ -23,6 +23,7 @@ consumes: {
   water/0.35
  ]
 }
+drawLiquidLight: true
 
 outputLiquid: cryofluid/0.6
 
@@ -52,7 +53,6 @@ drawer: {
   {
   type: DrawLiquidTile
   drawLiquid: cryofluid
-  drawLiquidLight: true
   }
   {
   type: DrawBubbles

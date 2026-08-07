@@ -37,6 +37,7 @@ requirements: [
  a-i002-serpluxium/100
 ]
 lightLiquid: a-l001-supercoolant
+drawLiquidLight: true
 
 drawer: {
  type: DrawMulti
@@ -52,7 +53,6 @@ drawer: {
   {
   type: DrawLiquidTile
   drawLiquid: a-l001-supercoolant
-  drawLiquidLight: true
   }
   {
   type: DrawBubbles

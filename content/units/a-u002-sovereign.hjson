@@ -29,7 +29,6 @@ weapons: [
   shootSound: shootRipple
   shootSoundVolume: 1.5
   top: false
-  shootEffect: shootBig
 
   bullet: {
    type: ArtilleryBulletType
@@ -38,7 +37,7 @@ weapons: [
    hitSound: explosionReactor
    hitSoundPitch: 1.5
    hitSoundVolume: 0.9
-   shake: 6
+   despawnShake: 6
 
    sprite: pocchistuffs-round-bullet
    backColor: e9665bff
@@ -63,7 +62,6 @@ weapons: [
     smokes: 18
     sparks: 16
     sparkStroke: 3
-    sparkSize: 6
     sparkColor: e9665bff
     waveColor: e9665bff
     smokeColor: e9665b80
@@ -124,7 +122,7 @@ weapons: [
     splashDamage: 250
     splashDamageRadius: 48
     speed: 1
-    shake: 2.8
+    despawnShake: 2.8
     lifetime: 40
     despawnSound: explosionArtillery
     hitSound: explosionArtillery
