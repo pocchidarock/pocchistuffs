@@ -7,7 +7,7 @@ description: Multiple solar panels provide small amounts of power from the sun. 
 powerProduction: 7.2
 
 category: power
-//research
+research: solar-panel-large
 
 requirements: [
   lead/160
