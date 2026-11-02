@@ -1,0 +1,29 @@
+type: CoreBlock
+name: Core: Mantle
+description: Core of the base. Stores more resources than a nucleus. Heavily armored.
+size: 6
+
+requirements: [
+  copper/ 12000
+  lead/ 12000
+  silicon/ 10000
+  thorium/ 9000
+  phase-fabric/ 4000
+]
+
+research: {
+  parent: core-nucleus
+  objectives: [
+    {
+      type: SectorComplete
+      preset: nuclearComplex
+    }
+  ]
+}
+
+health: 12500
+itemCapacity: 25000
+unitCapModifier: 32
+unitType: a-u008-delta
+category: effect
+thrusterLength: 12

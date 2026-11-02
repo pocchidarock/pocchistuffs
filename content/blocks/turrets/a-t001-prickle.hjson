@@ -1,0 +1,70 @@
+type: ItemTurret
+name: Prickle
+description: Fires missiles at enemy targets.
+size: 1
+
+reload: 45
+rotateSpeed: 8
+range: 180
+recoil: 1
+health: 450
+
+coolant: {
+  type: ConsumeCoolant
+  amount: 0.1
+}
+
+requirements: [
+  graphite/35
+  copper/35
+]
+category: turret
+
+shootSound: shootMissile 
+
+research: {
+  parent: hail
+  objectives: [
+    {
+      type: OnSector
+      preset: crateredBattleground
+    }
+  ]
+}
+coolantMultiplier: 10
+
+ammoTypes: {
+
+graphite: {
+	type: MissileBulletType
+	lifetime: 55
+	speed: 4
+	damage: 6
+	splashDamage: 20
+	splashDamageRadius: 24
+	width: 7
+	height: 10
+	hitEffect: blastExplosion
+	shrinkY: 0
+}
+pyratite: {
+	type: MissileBulletType
+	lifetime: 55
+	speed: 4
+	damage: 10
+	splashDamage: 32
+	splashDamageRadius: 24
+	width: 7
+	height: 10
+	hitEffect: blastExplosion
+	frontColor: f8ad42
+	backColor: f68021
+	trailColor: f68021
+
+	makeFire: true
+	ammoMultiplier: 3
+	status: burning
+	homingPower: .08
+	shrinkY: 0
+}
+}

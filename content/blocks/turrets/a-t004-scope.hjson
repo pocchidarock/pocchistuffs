@@ -1,0 +1,120 @@
+type: ItemTurret
+name: Scope
+description: Fires high velocity rounds at enemy targets. Prioritizes units with higher max health.
+size: 2
+
+reload: 90
+rotateSpeed: 7
+range: 240
+shootEffect: shootScepterSecondary 
+recoil: 1
+health: 900
+
+unitSort: strongest
+
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      moveY: -3
+      under: true
+    }
+  ]
+}
+
+coolant: {
+  type: ConsumeCoolant
+  amount: 0.1
+}
+
+requirements: [
+  lead/60
+  copper/90
+  silicon/50
+]
+category: turret
+
+shootSound: shootScepter 
+
+research: {
+  parent: a-t001-prickle
+  objectives: [
+    {
+      type: SectorComplete
+      preset: ruinousShores
+    }
+  ]
+}
+
+coolantMultiplier: 10
+
+shake: 1
+ammoTypes: {
+
+lead: {
+	type: BasicBulletType
+	shrinkY: 0
+	lifetime: 18
+	speed: 16
+	damage: 80
+	width: 5
+	height: 10
+	ammoMultiplier: 1
+
+  trailColor: f9c27aff
+	trailWidth: 1
+  trailLength: 6
+
+	knockback: 6
+}
+titanium: {
+	type: BasicBulletType
+  hitEffect: hitBulletColor
+  despawnEffect: hitBulletColor
+	shrinkY: 0
+	lifetime: 18
+	speed: 16
+	damage: 120
+	width: 7
+	height: 10
+	ammoMultiplier: 1
+  hitColor: a9d8ffff
+  backColor: a9d8ffff
+  frontColor: ffffff
+
+  trailColor: a9d8ffff
+	trailWidth: 1.15
+  trailLength: 6
+
+	knockback: 10
+}
+thorium: {
+	type: BasicBulletType
+  armorMultiplier: .8
+  hitEffect: hitBulletColor
+  despawnEffect: hitBulletColor
+	shrinkY: 0
+	lifetime: 18
+	speed: 16
+	damage: 175
+	width: 7
+	height: 10
+	ammoMultiplier: 1
+  hitColor: f595be
+  backColor: f595be
+  frontColor: ffffff
+
+  trailColor: f595be
+	trailWidth: 1.2
+  trailLength: 6
+
+  pierceCap: 2
+  pierce: true
+
+	knockback: 10
+}
+
+}

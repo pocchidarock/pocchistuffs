@@ -1,0 +1,73 @@
+type: ItemTurret
+name: Cleat
+description: Fires piercing blasts at nearby enemies.
+size: 2
+
+reload: 30
+rotateSpeed: 7
+range: 60
+shootEffect: shootScepterSecondary 
+recoil: 3
+health: 1100
+shootCone: 10
+
+coolant: {
+  type: ConsumeCoolant
+  amount: 0.1
+}
+
+requirements: [
+  copper/85
+  graphite/85
+  titanium/50
+]
+category: turret
+
+shootSound: shootFuse
+shootSoundVolume: .75
+research: a-t003-splinter
+
+coolantMultiplier: 15
+depositCooldown: 1
+
+shootY: 0
+shake: 1.5
+shootEffect: none
+ammoTypes: {
+
+lead: {
+	type: ShrapnelBulletType
+	lifetime: 18
+  	length: 70
+	damage: 55
+	width: 12
+	serrationLenScl: 2
+	serrationFadeOffset: .75
+	serrations: 5
+	fromColor: d9cfefff
+ 	toColor: ab99d3ff
+	smokeEffect: {
+		type: ParticleEffect
+		colorTo: ab99d3ff
+		colorFrom: ffffffff
+		cone: 60
+		strokeFrom: 1.5
+		strokeTo: .7
+		lenFrom: 4
+		lenTo: 6
+		line: true
+		lifetime: 12
+		interp: pow3Out
+	}
+}
+titanium: {
+	type: ShrapnelBulletType
+	lifetime: 18
+    length: 70
+	damage: 95
+	width: 12
+	serrationLenScl: 2
+	serrationFadeOffset: .75
+	serrations: 5
+}
+}

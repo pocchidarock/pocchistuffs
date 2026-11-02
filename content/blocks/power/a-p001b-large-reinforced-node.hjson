@@ -4,12 +4,12 @@ size: 2
 name: Large Reinforced Node
 description: A large power node that has improved health and range but fewer connections.
 
-health: 420
+health: 520
 category: power
 research: a-p001a-reinforced-node
 
 maxNodes: 10
-laserRange: 18
+laserRange: 22
 
 requirements: [
   lead/8

@@ -1,18 +1,10 @@
 name: pocchistuffs
 displayName: Pocchi's Stuffs
 author: Pocchi
-description:
-'''
-[#f695d5[]]DISCLAIMER: THIS MOD WAS JUST SUPPOSED TO BE A PERSONAL PROJECT, BUT I DECIDED TO PUBLISH IT ANYWAY.
+description: idk
 
-[#ffffff[]]Adds several stuff to serpulo. (future content planned for erekir)
-Content already added:
-- Extra tiers to almost every factory
-- More distribution blocks
-- Tier 6-7 units
-'''
 subtitle: "[#f695d5[]]Factories, Factories!"
-version: v0.52
+version: v0.6
 minGameVersion: 136
 dependencies: []
 hideBrowser: false

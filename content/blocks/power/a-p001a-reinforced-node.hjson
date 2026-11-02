@@ -4,12 +4,12 @@ size: 1
 name: Reinforced Node
 description: A power node that has improved health and range but fewer connections.
 
-health: 260
+health: 320
 category: power
 research: power-node
 
 maxNodes: 6
-laserRange: 8
+laserRange: 10
 
 requirements: [
   lead/6

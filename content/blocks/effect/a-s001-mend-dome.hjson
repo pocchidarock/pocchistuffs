@@ -1,0 +1,33 @@
+type: MendProjector
+name: Mend Dome
+description: Repairs blocks in its vicinity. Requires phase fabric and cryofluid coolant. 
+size: 3
+
+range: 216
+hasPower: true
+hasItems: true
+hasLiquids: true
+
+healPercent: 25
+reload: 150
+useTime: 300
+
+consumes: {
+ power: 7
+ items: phase-fabric/1
+ liquid: cryofluid/ 0.05
+}
+phaseRangeBoost: 0
+phaseBoost: 0
+
+category: effect
+
+research: mend-projector
+
+requirements: [
+ copper/ 150
+ lead/ 250
+ titanium/ 50
+ silicon/ 120
+ phase-fabric/ 75
+]
