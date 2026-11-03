@@ -2,7 +2,7 @@ type: PowerNode
 
 size: 3
 name: Power Network
-description: A power node that has improved health and range but fewer connections.
+description: An even larger power node with greater range.
 
 category: power
 research: power-node-large
