@@ -1,0 +1,21 @@
+type: ShockMine
+name: Impact Mine
+description: Explodes upon enemy unit contact.
+
+category: effect
+
+research: shock-mine
+hasShadow: false
+health: 75
+tileDamage: 10
+damage: 140
+length: 0
+tendrils: 0
+bullet: {
+   type: ExplosionBulletType 
+}
+
+requirements: [
+ thorium/12
+ silicon/20
+]

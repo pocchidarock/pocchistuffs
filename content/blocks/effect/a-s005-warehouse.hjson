@@ -1,0 +1,16 @@
+type: StorageBlock
+name: Warehouse
+description: Emits light. Has greater coverage compared to normal.
+size: 4
+
+category: effect
+
+research: vault
+itemCapacity: 2800
+scaledHealth: 60
+
+requirements: [
+ titanium/600
+ thorium/420
+ a-i002-serpluxium/265
+]

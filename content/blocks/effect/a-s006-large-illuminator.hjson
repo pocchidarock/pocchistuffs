@@ -1,0 +1,22 @@
+type: LightBlock
+name: Illuminator
+description: Emits light. Has greater coverage compared to normal.
+size: 2
+buildVisibility: lightingOnly
+
+category: effect
+
+research: illuminator
+
+brightness: .75
+radius: 220
+consumes: {
+   power: .15
+}
+
+requirements: [
+ lead/12
+ graphite/20
+ titanium/15
+ silicon/12
+]
