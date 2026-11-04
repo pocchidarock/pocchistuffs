@@ -4,7 +4,7 @@ author: Pocchi
 description: idk
 
 subtitle: "[#f695d5[]]I should finish this but iowanna"
-version: v0.62
+version: v0.7
 minGameVersion: 136
 dependencies: []
 hideBrowser: false
