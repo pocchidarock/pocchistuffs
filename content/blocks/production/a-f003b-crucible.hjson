@@ -10,7 +10,7 @@ hasLiquids: true
 itemCapacity: 50
 liquidCapacity: 120
 
-craftTime: 75
+craftTime: 45
 craftEffect: smeltsmoke
 
 boostScale: 0.14

@@ -13,7 +13,7 @@ consumeTime: 180
 
 consumes: {
 power: 4
-item: graphite
+item: graphite/1
 }
 
 requirements: [
