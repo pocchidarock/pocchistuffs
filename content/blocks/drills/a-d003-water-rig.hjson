@@ -1,4 +1,4 @@
-type: SolidPump
+type: Fracker
 name: Water Rig
 description: Extracts groundwater faster than a standard water extractor. Used in locations with no surface water available, requires graphite.
 category: production
@@ -9,7 +9,7 @@ pumpAmount: .45
 liquidCapacity: 120
 attribute: water
 rotateSpeed: 4
-consumeTime: 180
+itemUseTime: 180
 
 consumes: {
 power: 4
