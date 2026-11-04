@@ -23,7 +23,7 @@ consumes: {
  ]
 }
 
-outputItem: phase-fabric/6
+outputItem: phase-fabric/8
 
 category: crafting
 

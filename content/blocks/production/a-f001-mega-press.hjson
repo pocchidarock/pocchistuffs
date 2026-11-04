@@ -31,7 +31,7 @@ consumes: {
  ]
 }
 
-outputItem: graphite/6
+outputItem: graphite/8
 
 category: crafting
 

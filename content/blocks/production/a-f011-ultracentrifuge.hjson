@@ -9,7 +9,7 @@ hasLiquids: true
 itemCapacity: 20
 liquidCapacity: 120
 
-craftTime: 10
+craftTime: 15
 updateEffect: coalSmeltsmoke
 
 consumes: {
@@ -20,7 +20,7 @@ consumes: {
  ]
 }
 
-outputItem: coal/1
+outputItem: coal/2
 
 category: crafting
 

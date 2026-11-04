@@ -1,6 +1,6 @@
 type: Fracker
 name: Oil Rig
-description: Uses larger amounts of power, sand. and water to drill for oil.
+description: Uses larger amounts of power, sand and water to drill for oil.
 category: production
 size: 4
 

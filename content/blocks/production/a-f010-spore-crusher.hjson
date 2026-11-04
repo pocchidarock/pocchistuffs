@@ -18,7 +18,7 @@ consumes: {
  ]
 }
 
-outputLiquid: oil/0.8
+outputLiquid: oil/1
 
 category: crafting
 

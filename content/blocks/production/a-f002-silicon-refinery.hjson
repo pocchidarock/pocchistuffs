@@ -1,6 +1,6 @@
 type: AttributeCrafter
 name: Silicon Refinery
-description: Refines silicon from sand, coal, and oil, using pyratite as an additional heat source. More efficient in hot locations. 
+description: Refines silicon from sand, coal, and oil using pyratite as an additional heat source. More efficient in hot locations. 
 size: 4
 
 hasPower: true
@@ -26,7 +26,7 @@ consumes: {
  ]
 }
 
-outputItem: silicon/24
+outputItem: silicon/32
 
 category: crafting
 

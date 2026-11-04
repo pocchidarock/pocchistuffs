@@ -1,6 +1,6 @@
 type: AttributeCrafter
 name: Furnace
-description: Smelts sand and lead into metaglass, using pyratite as an additional heat source. More efficient in hot locations.
+description: Smelts sand and lead into metaglass using pyratite as an additional heat source. More efficient in hot locations.
 size: 3
 
 hasPower: true
@@ -16,14 +16,14 @@ consumes: {
   power: 4.8
   items: {
     items: [
-      sand/3
-      lead/3
+      sand/4
+      lead/4
       pyratite/2
     ]
   }
 }
 
-outputItem: metaglass/8
+outputItem: metaglass/12
 
 category: crafting
 

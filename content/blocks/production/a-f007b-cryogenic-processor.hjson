@@ -19,11 +19,11 @@ consumes: {
   a-i002-serpluxium/5
  ]
  liquids: [
-  cryofluid/0.8
+  cryofluid/1.2
  ]
 }
 
-outputLiquid: a-l001-supercoolant/0.4
+outputLiquid: a-l001-supercoolant/0.6
 
 category: crafting
 

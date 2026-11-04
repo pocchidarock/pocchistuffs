@@ -4,7 +4,7 @@ author: Pocchi
 description: idk
 
 subtitle: "[#f695d5[]]Factories, Factories!"
-version: v0.6
+version: v0.61
 minGameVersion: 136
 dependencies: []
 hideBrowser: false

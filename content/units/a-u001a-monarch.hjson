@@ -1,6 +1,6 @@
 type: mech
 name: Monarch
-description: Fires continuous steams of flame at enemy targets.
+description: Fires continuous streams of flame at enemy targets.
 
 research: reign
 health: 92000

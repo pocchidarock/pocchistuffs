@@ -1,6 +1,6 @@
 type: AttributeCrafter
 name: Crucible
-description: Smelts sand and lead into metaglass, using pyratite and slag as additional heat sources. More efficient in hot locations.
+description: Smelts sand and lead into metaglass using pyratite. More efficient in hot locations, produces slag as a byproduct.
 
 size: 4
 
@@ -18,16 +18,14 @@ boostScale: 0.14
 consumes: {
  power: 9.2
  items: [
-  lead/7
-  sand/7
+  lead/8
+  sand/8
   pyratite/3
- ]
- liquids: [
-  slag/0.3
  ]
 }
 
-outputItem: metaglass/12
+outputItem: metaglass/20
+outputLiquid: slag/0.3
 
 category: crafting
 

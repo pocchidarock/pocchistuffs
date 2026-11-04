@@ -1,17 +1,19 @@
 type: SolidPump
 name: Water Rig
-description: Extracts groundwater faster than a standard water extractor. Used in locations with no surface water available.
+description: Extracts groundwater faster than a standard water extractor. Used in locations with no surface water available, requires graphite.
 category: production
 size: 3
 
 result: water
-pumpAmount: .4
+pumpAmount: .45
 liquidCapacity: 120
 attribute: water
 rotateSpeed: 4
+consumeTime: 180
 
 consumes: {
 power: 4
+item: graphite
 }
 
 requirements: [
