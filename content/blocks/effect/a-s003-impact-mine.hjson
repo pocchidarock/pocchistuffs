@@ -7,12 +7,18 @@ category: effect
 research: shock-mine
 hasShadow: false
 health: 75
-tileDamage: 10
-damage: 140
+tileDamage: 25
+damage: 130
 length: 0
 tendrils: 0
 bullet: {
-   type: ExplosionBulletType 
+   type: ArtilleryBulletType
+   lifetime: 0
+   splashDamage: 130
+   splashDamageRadius: 30
+   scaledSplashDamage: true
+   speed: 0
+   despawnEffect: blastExplosion
 }
 
 requirements: [
