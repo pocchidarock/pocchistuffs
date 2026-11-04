@@ -9,7 +9,7 @@ category: effect
 research: illuminator
 
 brightness: .75
-radius: 220
+radius: 300
 consumes: {
    power: 0.15
 }
