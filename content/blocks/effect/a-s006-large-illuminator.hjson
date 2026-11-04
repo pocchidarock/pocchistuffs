@@ -11,7 +11,7 @@ research: illuminator
 brightness: .75
 radius: 220
 consumes: {
-   power: .15
+   power: 0.15
 }
 
 requirements: [
