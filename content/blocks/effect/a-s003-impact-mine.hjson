@@ -8,14 +8,14 @@ research: shock-mine
 hasShadow: false
 health: 75
 tileDamage: 25
-damage: 130
+damage: 320
 length: 0
 tendrils: 0
 shots: 1
 bullet: {
    type: ArtilleryBulletType
    lifetime: 0
-   splashDamage: 130
+   splashDamage: 320
    splashDamageRadius: 30
    scaledSplashDamage: true
    speed: 0
