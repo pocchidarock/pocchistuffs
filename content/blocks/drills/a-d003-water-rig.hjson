@@ -13,7 +13,9 @@ itemUseTime: 180
 
 consumes: {
 power: 4
-item: graphite/1
+items: [
+graphite/1
+]
 }
 
 requirements: [
