@@ -1,6 +1,6 @@
 type: StorageBlock
 name: Warehouse
-description: Emits light. Has greater coverage compared to normal.
+description: Stores massive amounts of items of each type. Expands storage when next to a core. Contents can be retrieved with an unloader.
 size: 4
 
 category: effect
