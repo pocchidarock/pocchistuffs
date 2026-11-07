@@ -61,7 +61,7 @@ shoot: {
   firstShotDelay: 12
   type: ShootAlternate
   barrels: 2
-  barrelOffset: .3
+  barrelOffset: 0.3
 }
 shootY: 4
 shootType: {
