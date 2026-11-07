@@ -29,7 +29,7 @@ soundPitchMax: 1.5
 soundPitchMin: 1.2
 
 research: {
-  parent: scatter
+  parent: a-t001-prickle
   objectives: [
     {
       type: SectorComplete
