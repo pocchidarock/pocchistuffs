@@ -24,8 +24,9 @@ drawer: {
 	  moves: [
 		{
 		progress: recoil
-		rot: -30
+		rot: -48
 		y: -2
+		x: 3
 		}
 	  ]
     }
@@ -39,8 +40,9 @@ drawer: {
 	  moves: [
 		{
 		progress: recoil
-		rot: 30
+		rot: 48
 		y: -2
+		x: -3
 		}
 	  ]
     }
