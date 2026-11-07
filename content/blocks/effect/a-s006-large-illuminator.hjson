@@ -1,5 +1,5 @@
 type: LightBlock
-name: Illuminator
+name: Large Illuminator
 description: Emits light. Has greater coverage compared to normal.
 size: 2
 buildVisibility: lightingOnly
