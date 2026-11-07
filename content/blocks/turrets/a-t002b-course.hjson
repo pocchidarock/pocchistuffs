@@ -74,7 +74,8 @@ shoot: {
 shootY: 5.5
 shootType: {
   type: LaserBoltBulletType
-  damage: 12
+  damage: 14
+  armorMultiplier: 0.85
   speed: 12
   lifetime: 20
   width: 2
