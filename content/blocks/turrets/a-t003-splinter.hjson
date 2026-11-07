@@ -16,26 +16,19 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      suffix: -barrel
-      progress: recoil
-      moveY: -3
-      under: true
-    }
-    {
-      type: RegionPart
-      suffix: -s1-l
+      suffix: -l
       progress: recoil
       moveY: -2
       moveX: -1
-	    moveRot: 20
+	    moveRot: -10
     }
     {
       type: RegionPart
-      suffix: -s1-r
+      suffix: -r
       progress: recoil
       moveY: -2
       moveX: 1
-	    moveRot: -20
+	    moveRot: 10
     }
   ]
 }
@@ -52,8 +45,10 @@ requirements: [
 ]
 category: turret
 
-shootSound: shootFuse 
-shootSoundVolume: .65
+shootSound: shootDiffuse 
+shootSoundVolume: .85
+soundPitchMax: 1.5
+soundPitchMin: 1.2
 
 research: {
   parent: scatter
