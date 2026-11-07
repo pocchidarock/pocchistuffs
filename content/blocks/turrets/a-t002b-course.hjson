@@ -3,7 +3,7 @@ name: Course
 description: Continuously shoots energy bolts at enemy aircraft.
 size: 2
 
-reload: 6
+reload: 8
 rotateSpeed: 10
 range: 180
 shootEffect: none
@@ -24,8 +24,16 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      suffix: -barrel
+      suffix: -barrel-l
       progress: recoil
+      recoilIndex: 1
+      moveY: -2
+    }
+        {
+      type: RegionPart
+      suffix: -barrel-r
+      progress: recoil
+      recoilIndex: 2
       moveY: -2
     }
     {
@@ -57,11 +65,12 @@ research: a-t002a-pulse
 
 coolantMultiplier: 15
 
+recoils: 2
 shoot: {
   firstShotDelay: 12
   type: ShootAlternate
   barrels: 2
-  barrelOffset: 0.3
+  spread: 1.5
 }
 shootY: 4
 shootType: {
