@@ -23,7 +23,7 @@ category: turret
 shootSound: shootMissile 
 
 research: {
-  parent: hail
+  parent: scatter
   objectives: [
     {
       type: OnSector
