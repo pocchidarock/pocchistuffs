@@ -26,14 +26,14 @@ drawer: {
       type: RegionPart
       suffix: -barrel-l
       progress: recoil
-      recoilIndex: 1
+      recoilIndex: 0
       moveY: -2
     }
         {
       type: RegionPart
       suffix: -barrel-r
       progress: recoil
-      recoilIndex: 0
+      recoilIndex: 1
       moveY: -2
     }
     {
@@ -67,12 +67,12 @@ coolantMultiplier: 15
 
 recoils: 2
 shoot: {
-  firstShotDelay: 12
   type: ShootAlternate
   barrels: 2
   spread: 1.5
+  barrelOffset: 0
 }
-shootY: 4
+shootY: 5
 shootType: {
   type: LaserBoltBulletType
   damage: 12
