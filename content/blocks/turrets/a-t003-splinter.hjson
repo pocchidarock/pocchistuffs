@@ -7,21 +7,9 @@ reload: 60
 rotateSpeed: 9
 range: 100
 shootEffect: shootBig 
-recoil: 1.5
+recoil: 2
 health: 850
 targetAir: false
-
-drawer: {
-  type: DrawTurret
-  parts: [
-    {
-      type: RegionPart
-      suffix: -sides
-      progress: recoil
-      moveY: -3
-    }
-  ]
-}
 
 coolant: {
   type: ConsumeCoolant
