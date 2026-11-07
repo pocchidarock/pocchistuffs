@@ -17,18 +17,32 @@ drawer: {
     {
       type: RegionPart
       suffix: -l
-      progress: recoil
-      moveY: -2
-      moveX: -1
-	    moveRot: -10
+      progress: warmup
+      moveY: 1
+      moveX: -2
+	  moveRot: 20
+	  moves: [
+		{
+		progress: recoil
+		rot: -10
+		y: -2
+		}
+	  ]
     }
     {
       type: RegionPart
       suffix: -r
-      progress: recoil
-      moveY: -2
-      moveX: 1
-	    moveRot: 10
+      progress: warmup
+      moveY: 1
+      moveX: 2
+	  moveRot: -20
+	  moves: [
+		{
+		progress: recoil
+		rot: 10
+		y: -2
+		}
+	  ]
     }
   ]
 }
