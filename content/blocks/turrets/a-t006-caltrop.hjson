@@ -1,0 +1,114 @@
+type: PowerTurret
+name: Caltrop
+description: Shoots charged mines at enemy ground targets.
+size: 2
+
+reload: 75
+rotateSpeed: 10
+range: 115
+shootEffect: none
+recoil: 1
+health: 1200
+consumes: {
+  power: 6
+}
+targetAir: false
+
+coolant: {
+  type: ConsumeCoolant
+  amount: 0.1
+}
+
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -r
+      progress: warmup
+      moveX: 0.6
+      moveRot: 5
+
+    }
+        {
+      type: RegionPart
+      suffix: -l
+      progress: warmup
+      moveX: -0.6
+      moveRot: -5
+    }
+  ]
+}
+
+requirements: [
+  copper/80
+  titanium/30
+  lead/95
+  silicon/60
+]
+category: turret
+
+shootSound: shootRetusa
+
+research: {
+  parent: a-t002a-pulse
+  objectives: [
+    {
+      type: SectorComplete
+      preset: ruinousShores
+    }
+  ]
+}
+
+coolantMultiplier: 10
+
+recoils: 2
+velocityRnd: .4
+shoot: {
+  type: ShootSpread
+  spread: 6
+  shots: 3
+}
+shootY: 3
+shootType: {
+  inaccuracy: 45
+  type: BasicBulletType
+  sprite: mine-bullet
+  damage: 15
+  speed: 6
+  lifetime: 200
+  width: 10
+  height: 10
+  shrinkY: 0
+  backColor: a9d8ff
+  frontColor: ffffff
+  hitColor: a9d8ff
+  smokeEffect: hitLaserColor
+  hitEffect: hitBulletColor 
+  despawnEffect: hitBulletColor 
+	collidesAir: false
+  drag: 0.05
+
+  intervalBullet: {
+    type: LightningBulletType
+    damage: 10
+    lightningLength: 4
+    lightningLengthRand: 2
+  }
+
+  pierce: true
+  pierceCap: 2
+
+  lightning: 2
+  lightningColor: a9d8ffff
+  lightningLength: 8
+  lightningLengthRand: 2
+  lightningDamage: 18
+
+  trailColor: a9d8ff
+  trailLength: 4
+  trailWidth: 2.5
+  trailEffect: none
+
+  ammoMultiplier: 1
+}
