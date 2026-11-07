@@ -95,4 +95,5 @@ shootType: {
   trailWidth: 1.5
   trailEffect: none
 
+  ammoMultiplier: 1
 }
