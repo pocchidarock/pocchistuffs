@@ -18,7 +18,7 @@ drawer: {
       type: RegionPart
       suffix: -l
       progress: warmup
-      moveY: 6
+      moveY: 3
       moveX: -2
 	  moveRot: 60
 	  moves: [
@@ -33,7 +33,7 @@ drawer: {
       type: RegionPart
       suffix: -r
       progress: warmup
-      moveY: 6
+      moveY: 3
       moveX: 2
 	  moveRot: -60
 	  moves: [
