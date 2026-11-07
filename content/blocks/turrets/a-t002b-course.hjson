@@ -3,7 +3,7 @@ name: Course
 description: Continuously shoots energy bolts at enemy aircraft.
 size: 2
 
-reload: 8
+reload: 15
 rotateSpeed: 10
 range: 180
 shootEffect: none
@@ -63,16 +63,15 @@ shootSound: shootLaser
 
 research: a-t002a-pulse
 
-coolantMultiplier: 15
+coolantMultiplier: 10
 
 recoils: 2
 shoot: {
   type: ShootAlternate
   barrels: 2
-  spread: 1.5
-  barrelOffset: 0
+  spread: 2
 }
-shootY: 5
+shootY: 5.5
 shootType: {
   type: LaserBoltBulletType
   damage: 12
