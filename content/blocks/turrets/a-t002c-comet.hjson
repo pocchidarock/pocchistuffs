@@ -1,0 +1,136 @@
+type: PowerTurret
+name: Comet
+description: Fires a ball of lightning at enemy targets.
+size: 3
+
+reload: 120
+rotateSpeed: 10
+range: 260
+shootEffect: shootSmokeTitan
+recoil: 1
+health: 2000
+consumes: {
+  power: 9
+}
+
+coolant: {
+  type: ConsumeCoolant
+  amount: 0.1
+}
+
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      moveY: -5
+    }
+    {
+      type: RegionPart
+      suffix: -r
+      progress: warmup
+      moveX: 4
+    }
+    {
+      type: RegionPart
+      suffix: -l
+      progress: warmup
+      moveX: -4
+    }
+  ]
+}
+
+requirements: [
+  copper/300
+  lead/275
+  silicon/180
+  thorium/80
+]
+category: turret
+
+shootSound: explosionObviate
+
+research: a-t002b-course
+
+coolantMultiplier: 10
+
+shoot: {
+  firstShotDelay: 15
+}
+shootY: 5.5
+shootType: {
+  type: BasicBulletType
+  armorMultiplier: 2
+  despawnShake: 3
+  hitShake: 3
+  sprite: large-orb
+  damage: 40
+  splashDamage: 125
+  splashDamageRadius: 48
+  speed: 2.8
+  lifetime: 120
+  width: 10
+  height: 10
+  shrinkY: 0
+  backColor: a9d8ff
+  frontColor: ffffff
+  hitColor: a9d8ff
+  despawnEffect: {
+    type: ExplosionEffect
+    lifetime: 15
+    waveColor: a9d8ffff
+    sparkColor: a9d8ffff
+    smokeColor: a9d8ff70
+    waveRad: 48
+    waveStroke: 4
+    sparkRad: 50
+    sparkLen: 8
+    smokeRad: 50
+    smokes: 8
+    smokeSize: 8
+    sparks: 14
+  }
+  hitEffect: {
+    type: ExplosionEffect
+    lifetime: 15
+    waveColor: a9d8ffff
+    sparkColor: a9d8ffff
+    smokeColor: a9d8ff70
+    waveRad: 48
+    waveStroke: 4
+    sparkRad: 50
+    sparkLen: 8
+    smokeRad: 50
+    smokes: 8
+    smokeSize: 8
+    sparks: 14
+  }
+
+  bulletInterval: 4
+  intervalBullet: {
+    type: LightningBulletType
+    damage: 18
+    lightningLength: 6
+    lightningLengthRand: 2
+  }
+
+  homingPower: 0.04
+  homingRange: 180
+  despawnSound: explosionArtilleryShock
+  hitSound: explosionArtilleryShock
+
+  lightning: 5
+  lightningColor: a9d8ffff
+  lightningLength: 12
+  lightningLengthRand: 2
+  lightningDamage: 35
+
+  trailColor: a9d8ff
+  trailLength: 12
+  trailWidth: 2.5
+  trailEffect: none
+
+  ammoMultiplier: 1
+}

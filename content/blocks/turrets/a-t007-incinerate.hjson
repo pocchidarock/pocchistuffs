@@ -1,0 +1,78 @@
+type: ItemTurret
+name: Incinerate
+description: Incinerates enemies in its range.
+size: 3
+
+reload: 5
+rotateSpeed: 10
+range: 90
+recoil: 1.2
+health: 1450
+liquidCapacity: 50
+hasLiquids: true
+consumes: {
+  liquids: [oil/0.5]
+
+  coolant: {
+  type: ConsumeCoolant
+  amount: 0.1
+}
+}
+
+smokeEffect: {
+  type: ParticleEffect
+  particles: 7
+  cone: 7
+  length: 110
+  colorFrom: db401cff
+  colorTo: 7f7f7fff
+  interp: pow3Out
+  sizeFrom: 3.5
+  sizeTo: .8
+  layer: 109
+  lifetime: 40
+}
+shootEffect: {
+  type: ParticleEffect
+  particles: 10
+  cone: 10
+  length: 100
+  colorFrom: ffb855ff
+  colorTo: db401cff
+  interp: pow3Out
+  sizeFrom: 5
+  sizeTo: 0
+  lifetime: 30
+}
+
+requirements: [
+  lead/180
+  metaglass/120
+  graphite/95
+  plastanium/75
+]
+category: turret
+
+shootSound: shootFlame
+
+research: a-t003-splinter
+
+coolantMultiplier: 10
+
+ammoTypes: {
+  pyratite: {
+  type: BulletType
+  pierce: true
+  damage: 72
+  speed: 6.2
+  lifetime: 16
+  hitColor: a9d8ff
+  despawnEffect: none
+  hitEffect: hitFlameSmall
+
+  status: melting
+  statusDuration: 600
+
+  ammoMultiplier: 8
+  }
+}

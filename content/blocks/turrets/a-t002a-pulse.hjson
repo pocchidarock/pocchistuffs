@@ -31,10 +31,11 @@ research: arc
 
 coolantMultiplier: 25
 
+inaccuracy: 20
+
 shootY: 1.5
 shootType: {
   type: LaserBoltBulletType
-  inaccuracy: 20
   damage: 9
   speed: 6
   lifetime: 34

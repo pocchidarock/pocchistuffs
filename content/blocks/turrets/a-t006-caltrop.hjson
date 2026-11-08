@@ -48,7 +48,7 @@ requirements: [
 ]
 category: turret
 
-shootSound: shootRetusa
+shootSound: shootMerui
 
 research: {
   parent: a-t002a-pulse
@@ -65,13 +65,11 @@ coolantMultiplier: 10
 recoils: 2
 velocityRnd: .4
 shoot: {
-  type: ShootSpread
-  spread: 6
   shots: 3
 }
+inaccuracy: 45
 shootY: 3
 shootType: {
-  inaccuracy: 45
   type: BasicBulletType
   sprite: mine-bullet
   damage: 15
@@ -88,6 +86,8 @@ shootType: {
   despawnEffect: hitBulletColor 
 	collidesAir: false
   drag: 0.05
+
+  despawnSound: explosionArtilleryShock 
 
   intervalBullet: {
     type: LightningBulletType

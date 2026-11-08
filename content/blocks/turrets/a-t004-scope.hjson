@@ -54,7 +54,7 @@ coolantMultiplier: 10
 shake: 1
 ammoTypes: {
 
-lead: {
+copper: {
 	type: BasicBulletType
 	shrinkY: 0
 	lifetime: 18
