@@ -1,0 +1,27 @@
+captureWave: 20
+difficulty: 5
+planet: serpulo
+sector: 63
+outline: false
+name: Smothered Compound
+description: '''
+Remnants of a major smelting facility lie within this sector.
+
+Salvage any remaining technology, prepare for dense enemy formations.
+'''
+
+
+research: {
+  parent: groundZero
+  objectives: [
+	titanium,
+	{
+		type: Research
+  		content: graphite-press
+	}
+    {
+    	type: SectorComplete
+    	preset: stainedMountains
+    }
+  ]
+}

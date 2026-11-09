@@ -22,7 +22,15 @@ outputItem: a-i001-pallarite/2
 
 category: crafting
 
-research: graphite-press
+research: {
+  parent: graphite-press
+  objectives: [
+    {
+      type: SectorComplete
+      preset: a-m001-smothered-compound
+    }
+  ]
+}
 
 requirements: [
  graphite/40

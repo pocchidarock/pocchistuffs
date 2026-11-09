@@ -10,7 +10,7 @@ shootEffect: none
 recoil: 1
 health: 1200
 consumes: {
-  power: 6
+  power: 4
 }
 targetAir: false
 
@@ -91,7 +91,7 @@ shootType: {
 
   intervalBullet: {
     type: LightningBulletType
-    damage: 10
+    damage: 15
     lightningLength: 4
     lightningLengthRand: 2
   }
