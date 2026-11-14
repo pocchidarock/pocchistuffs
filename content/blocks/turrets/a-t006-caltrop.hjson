@@ -4,13 +4,13 @@ description: Shoots charged mines at enemy ground targets.
 size: 2
 
 reload: 75
-rotateSpeed: 10
+rotateSpeed: 5
 range: 115
 shootEffect: none
 recoil: 1
 health: 1200
 consumes: {
-  power: 4
+  power: 6.5
 }
 targetAir: false
 
@@ -91,7 +91,7 @@ shootType: {
 
   intervalBullet: {
     type: LightningBulletType
-    damage: 15
+    damage: 12
     lightningLength: 4
     lightningLengthRand: 2
   }
