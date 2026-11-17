@@ -4,7 +4,7 @@ description: Fires a ball of lightning at enemy targets.
 size: 3
 
 reload: 120
-rotateSpeed: 10
+rotateSpeed: 4
 range: 260
 shootEffect: shootSmokeTitan
 recoil: 1

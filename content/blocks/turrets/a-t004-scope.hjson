@@ -3,12 +3,13 @@ name: Scope
 description: Fires high velocity rounds at enemy targets. Prioritizes units with higher max health.
 size: 2
 
-reload: 90
+reload: 85
 rotateSpeed: 7
 range: 240
 shootEffect: shootScepterSecondary 
 recoil: 1
 health: 900
+shootCone: 5
 
 unitSort: strongest
 
