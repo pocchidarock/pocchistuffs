@@ -5,7 +5,7 @@ size: 3
 
 reload: 5
 rotateSpeed: 3
-range: 90
+range: 72
 recoil: 1.2
 health: 1450
 liquidCapacity: 50
