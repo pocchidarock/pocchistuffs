@@ -56,7 +56,7 @@ weapons: [
     sizeFrom: 6
     sizeTo: 1
     layer: 109
-    lifetime: 40
+    lifetime: 20
    }
    smokeEffect: {
     type: ParticleEffect
