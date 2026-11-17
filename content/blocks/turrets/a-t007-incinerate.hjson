@@ -4,7 +4,7 @@ description: Incinerates enemies in its range.
 size: 3
 
 reload: 5
-rotateSpeed: 10
+rotateSpeed: 3
 range: 90
 recoil: 1.2
 health: 1450
