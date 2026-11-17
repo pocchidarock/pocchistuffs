@@ -30,7 +30,7 @@ smokeEffect: {
   sizeFrom: 3.5
   sizeTo: .8
   layer: 109
-  lifetime: 20
+  lifetime: 30
 }
 shootEffect: {
   type: ParticleEffect
