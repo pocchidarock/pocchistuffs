@@ -3,6 +3,8 @@ name: Splinter
 description: Shoots barrages of shrapnel at enemy ground targets.
 size: 2
 
+unitSort: grouped
+
 reload: 60
 rotateSpeed: 9
 range: 100
