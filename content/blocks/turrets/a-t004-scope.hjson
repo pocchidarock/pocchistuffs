@@ -92,6 +92,48 @@ titanium: {
 
 	knockback: 10
 }
+a-i001-pallarite: {
+	type: BasicBulletType
+  hitEffect: hitBulletColor
+  despawnEffect: hitBulletColor
+  reloadMultiplier: .8
+	shrinkY: 0
+	lifetime: 18
+	speed: 16
+	damage: 145
+	width: 8
+	height: 10
+	ammoMultiplier: 1
+  hitColor: 696571ff
+  backColor: 696571ff
+  frontColor: 8f8795ff
+
+  trailColor: 696571ff
+	trailWidth: 1.15
+  trailLength: 6
+
+	knockback: 10
+
+  fragBullets: 3
+		fragBullet: {
+	  type: BasicBulletType
+    hitEffect: hitBulletColor
+    despawnEffect: hitBulletColor
+	  shrinkY: 0
+	  lifetime: 8
+	  speed: 14
+	  damage: 45
+	  width: 5
+	  height: 8
+    hitColor: 696571ff
+    backColor: 696571ff
+    frontColor: 8f8795ff
+
+    trailColor: 696571ff
+	  trailWidth: 1
+    trailLength: 4
+	}
+}
 thorium: {
 	type: BasicBulletType
   armorMultiplier: .8
@@ -101,8 +143,8 @@ thorium: {
 	lifetime: 18
 	speed: 16
 	damage: 175
-	width: 7
-	height: 10
+	width: 8
+	height: 12
 	ammoMultiplier: 1
   hitColor: f595be
   backColor: f595be
