@@ -8,8 +8,8 @@ hasPower: true
 hasItems: true
 hasLiquids: true
 
-healPercent: 10
-reload: 60
+healPercent: 25
+reload: 150
 useTime: 300
 
 consumes: {
