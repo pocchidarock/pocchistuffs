@@ -1,0 +1,33 @@
+captureWave: 20
+difficulty: 3
+planet: serpulo
+sector: 179
+outline: false
+name: Deserted Valley
+description: '''
+Closer to the wastes lie a desolate valley.
+
+Prepare for a wide variety of enemy attacks, move onwards.
+'''
+
+
+research: {
+  parent: a-m001-smothered-compound
+  objectives: [
+	pyratite,
+	plastanium,
+	metaglass,
+	{
+		type: Research
+  		content: pyratite-mixer
+	}
+	{
+		type: Research
+  		content: scorch
+	}
+    {
+    	type: SectorComplete
+    	preset: windsweptIslands
+    }
+  ]
+}

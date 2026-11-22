@@ -55,7 +55,15 @@ category: turret
 
 shootSound: shootFlame
 
-research: a-t003-splinter
+research: {
+  parent: a-t003-splinter
+  objectives: [
+    {
+      type: SectorComplete
+      preset: a-m002-deserted-valley
+    }
+  ]
+}
 
 coolantMultiplier: 10
 

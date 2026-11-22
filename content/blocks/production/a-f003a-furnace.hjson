@@ -27,7 +27,15 @@ outputItem: metaglass/12
 
 category: crafting
 
-research: kiln
+research: {
+  parent: kiln
+  objectives: [
+    {
+      type: SectorComplete
+      preset: a-m002-deserted-valley
+    }
+  ]
+}
 
 requirements: [
   metaglass/110
