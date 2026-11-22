@@ -1,9 +1,9 @@
 type: ItemTurret
 name: Splinter
-description: Shoots barrages of shrapnel at enemy ground targets.
+description: Shoots barrages of shrapnel at enemy ground targets. Prioritizes the closest enemy target.
 size: 2
 
-unitSort: grouped
+unitSort: close
 
 reload: 60
 rotateSpeed: 9

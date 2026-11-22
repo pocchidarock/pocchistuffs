@@ -6,7 +6,7 @@ size: 2
 reload: 85
 rotateSpeed: 7
 range: 240
-minRange: 40
+minRange: 60
 shootEffect: shootScepterSecondary 
 recoil: 1
 health: 900
