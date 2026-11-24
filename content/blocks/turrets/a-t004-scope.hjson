@@ -105,11 +105,11 @@ a-i001-pallarite: {
 	width: 8
 	height: 10
 	ammoMultiplier: 1
-  hitColor: 696571ff
-  backColor: 696571ff
-  frontColor: 8f8795ff
+  hitColor: 696571
+  backColor: 696571
+  frontColor: 8f8795
 
-  trailColor: 696571ff
+  trailColor: 696571
 	trailWidth: 1.15
   trailLength: 6
 
@@ -126,11 +126,11 @@ a-i001-pallarite: {
 	  damage: 30
 	  width: 5
 	  height: 8
-    hitColor: 696571ff
-    backColor: 696571ff
-    frontColor: 8f8795ff
+    hitColor: 696571
+    backColor: 696571
+    frontColor: 8f8795
 
-    trailColor: 696571ff
+    trailColor: 696571
 	  trailWidth: 1
     trailLength: 4
 	}
