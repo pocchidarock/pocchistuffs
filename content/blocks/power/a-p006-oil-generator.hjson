@@ -1,0 +1,64 @@
+type: ConsumeGenerator
+
+size: 2
+name: Oil Generator
+description: Generates power from combusting oil.
+
+powerProduction: 7
+
+category: power
+research: steam-generator
+
+consumes: {
+  liquids: [
+  oil/0.25
+  ]
+}
+
+ambientSound: loopSmelter
+ambientSoundVolume: 0.04
+generateEffect: {
+  type: ParticleEffect
+  particles: 6
+  cone: 360
+  colorFrom: 7f7f7f80
+  colorTo: 7f7f7f00
+  sizeTo: 3
+  sizeFrom: 0
+  length: 6
+  lifetime: 75
+  interp: pow2Out
+}
+generateEffectRange: 0
+
+explosionShake: 1.2
+explosionScorchSize: 1.2
+explosionFireballs: 3
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -bottom
+    }
+    {
+      type: DrawParticles
+      reverse: true
+      color: ff7553ff
+      particleSize: 4
+      particles: 40
+      particleLife: 50
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+
+requirements: [
+  copper/45
+  lead/30
+  silicon/65
+  a-i001-pallarite/40
+]

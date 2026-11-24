@@ -1,0 +1,802 @@
+type: ItemTurret
+name: Tempest
+description: Fires bursts of flak at nearby enemies.
+size: 4
+
+shootSound: shootCyclone
+shootEffect: shootBig 
+
+hasLiquids: true
+liquidCapacity: 120
+
+health: 2950
+maxAmmo: 30
+ammoPerShot: 3
+inaccuracy: 15
+range: 250
+
+coolantMultiplier: 0.5
+coolant: {
+  type: ConsumeCoolant
+  amount: 1
+}
+depositCooldown: 1.5
+
+recoilPow: 3
+cooldownTime: 45
+
+category: turret
+
+research: cyclone
+
+requirements: [
+  lead/1000
+  plastanium/200
+  a-i001-pallarite/450
+  silicon/325
+  surge-alloy/280
+]
+
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel-l
+      progress: recoil
+      moveY: -3
+      recoilIndex: 2
+      under: true
+    }
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      moveY: -4
+      recoilIndex: 0
+      under: true
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-r
+      progress: recoil
+      moveY: -3
+      recoilIndex: 1
+      under: true
+    }
+  ]
+}
+
+reload: 60
+shoot: {
+  shots: 3
+  shotDelay: 13
+  type: ShootBarrel
+  barrels: [
+    0, -1, 0,
+    5, 0, 0
+    -5, 0, 0,
+  ]
+}
+recoils: 3
+recoilTime: 12
+
+ammoTypes: {
+
+  metaglass: {
+    type: FlakBulletType
+    backColor: b9c9df
+    frontColor: ffffff
+    width: 12
+    height: 15
+    reloadMultiplier: 0.75
+    ammoMultiplier: 1
+
+    velocityScaleRandMin: 0.9
+    speed: 5
+    lifetime: 25
+    splashDamage: 80
+    damage: 30
+    splashDamageRadius: 40
+    collidesGround: true
+
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: particleEffect
+          particles: 4
+          length: 15
+          colorFrom: b9c9df
+          colorTo: b9c9df
+          sizeFrom: 3
+          sizeTo: 0
+          line: true
+	        lifetime: 18
+        }
+        {
+          type: ExplosionEffect
+          waveRad: 30
+          sparkRad: 15
+          smokeRad: 15
+          smokeSize: 4
+          sparks: 6
+          waveColor: fff8e8
+          sparkColor: fff8e8
+        }
+      ]
+    }
+
+    despawnEffect: hitBulletColor
+
+    fragVelocityMin: 0.85
+    fragRandomSpread: 15
+    fragBullets: 1
+    fragBullet: {
+      type: BasicBulletType
+      backColor: b9c9df
+      frontColor: ffffff
+      width: 9
+      height: 11
+      collidesGround: true
+
+      speed: 3
+      lifetime: 30
+      splashDamage: 45
+      damage: 15
+      splashDamageRadius: 20
+
+      pierce: true
+      pierceCap: 2
+
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 10
+            colorFrom: b9c9df
+            colorTo: b9c9df
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 15
+            sparkRad: 10
+            smokeRad: 10
+            smokeSize: 3
+            sparks: 6
+            waveColor: fff8e8
+            sparkColor: fff8e8
+          }
+        ]
+      }
+
+      despawnEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 10
+            colorFrom: b9c9df
+            colorTo: b9c9df
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 15
+            sparkRad: 10
+            smokeRad: 10
+            smokeSize: 3
+            sparks: 6
+            waveColor: fff8e8
+            sparkColor: fff8e8
+          }
+        ]
+      }
+
+      fragRandomSpread: 60
+      fragBullets: 5
+      fragBullet: {
+        type: BasicBulletType
+        backColor: b9c9df
+        frontColor: ffffff
+        width: 5
+        height: 11
+        shrinkY: 1
+
+        despawnEffect: none
+        hitEffect: none
+
+        velocityScaleRandMin: 0.8
+        speed: 5
+        lifetime: 25
+        damage: 22
+
+        pierce: true
+        pierceCap: 5
+      }
+    }
+  }
+
+  plastanium: {
+    type: FlakBulletType
+    backColor: e9ea98
+    frontColor: fffbd0
+    width: 17
+    height: 17
+    ammoMultiplier: 1
+
+    velocityScaleRandMin: 0.9
+    speed: 5
+    lifetime: 30
+    splashDamage: 90
+    damage: 32
+    splashDamageRadius: 55
+    collidesGround: true
+
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: particleEffect
+          particles: 4
+          length: 35
+          colorFrom: e9ea98
+          colorTo: e9ea98
+          sizeFrom: 3
+          sizeTo: 0
+          line: true
+	        lifetime: 18
+        }
+        {
+          type: ExplosionEffect
+          waveRad: 45
+          sparkRad: 35
+          smokeRad: 35
+          smokeSize: 4
+          sparks: 6
+          waveColor: fffbd0
+          sparkColor: fffbd0
+        }
+      ]
+    }
+
+    despawnEffect: hitBulletColor
+
+    fragVelocityMin: 0.85
+    fragRandomSpread: 15
+    fragBullets: 1
+    fragBullet: {
+      type: BasicBulletType
+      backColor: e9ea98
+      frontColor: fffbd0
+      width: 12
+      height: 12
+      collidesGround: true
+
+      pierce: true
+      pierceCap: 2
+
+      speed: 3
+      lifetime: 35
+      splashDamage: 60
+      damage: 25
+      splashDamageRadius: 40
+
+      pierce: true
+      pierceCap: 2
+
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 35
+            colorFrom: e9ea98
+            colorTo: e9ea98
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 30
+            sparkRad: 35
+            smokeRad: 35
+            smokeSize: 4
+            sparks: 6
+            waveColor: fffbd0
+            sparkColor: fffbd0
+          }
+        ]
+      }
+
+      despawnEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 35
+            colorFrom: e9ea98
+            colorTo: e9ea98
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 30
+            sparkRad: 35
+            smokeRad: 35
+            smokeSize: 4
+            sparks: 6
+            waveColor: fffbd0
+            sparkColor: fffbd0
+          }
+        ]
+      }
+
+      fragRandomSpread: 75
+      fragBullets: 4
+      fragBullet: {
+        type: BasicBulletType
+        backColor: e9ea98
+        frontColor: fffbd0
+        width: 11
+        height: 9
+        shrinkY: 1
+
+        despawnEffect: none
+        hitEffect: none
+
+        velocityScaleRandMin: 0.8
+        speed: 5
+        lifetime: 30
+        damage: 25
+
+        pierce: true
+        pierceCap: 3
+      }
+    }
+  }
+
+  blast-compound: {
+    type: FlakBulletType
+    backColor: e9665b
+    frontColor: eeab89
+    width: 15
+    height: 18
+    ammoMultiplier: 1
+
+    velocityScaleRandMin: 0.9
+    speed: 4.5
+    lifetime: 35
+    splashDamage: 105
+    damage: 38
+    splashDamageRadius: 60
+    collidesGround: true
+
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: particleEffect
+          particles: 4
+          length: 40
+          colorFrom: e9665b
+          colorTo: e9665b
+          sizeFrom: 3
+          sizeTo: 0
+          line: true
+	        lifetime: 18
+        }
+        {
+          type: ExplosionEffect
+          waveRad: 50
+          sparkRad: 40
+          smokeRad: 40
+          smokeSize: 8
+          sparks: 6
+        }
+      ]
+    }
+
+    despawnEffect: hitBulletColor
+
+    fragVelocityMin: 0.85
+    fragRandomSpread: 15
+    fragBullets: 1
+    fragBullet: {
+      type: BasicBulletType
+      backColor: e9665b
+      frontColor: eeab89
+      width: 7.5
+      height: 9
+      collidesGround: true
+
+      speed: 4.5
+      lifetime: 15
+      splashDamage: 75
+      damage: 30
+      splashDamageRadius: 50
+
+      pierce: true
+      pierceCap: 2
+
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 25
+            colorFrom: e9665b
+            colorTo: e9665b
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 40
+            sparkRad: 30
+            smokeRad: 30
+            smokeSize: 4
+            sparks: 6
+          }
+        ]
+      }
+
+      despawnEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 25
+            colorFrom: e9665b
+            colorTo: e9665b
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 40
+            sparkRad: 30
+            smokeRad: 30
+            smokeSize: 4
+            sparks: 6
+          }
+        ]
+      }
+
+      fragVelocityMin: 0.85
+      fragRandomSpread: 15
+      fragBullets: 1
+      fragBullet: {
+        type: FlakBulletType
+        backColor: e9665b
+        frontColor: eeab89
+        width: 6.5
+        height: 8
+        collidesGround: true
+
+        speed: 4.5
+        lifetime: 15
+        splashDamage: 45
+        damage: 22
+        splashDamageRadius: 40
+        
+        hitEffect: {
+          type: MultiEffect
+          effects: [
+            {
+            type: particleEffect
+            particles: 4
+            length: 25
+            colorFrom: e9665b
+            colorTo: e9665b
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+            }
+            {
+              type: ExplosionEffect
+              waveRad: 30
+              sparkRad: 25
+              smokeRad: 25
+              smokeSize: 4
+              sparks: 6
+            }
+          ]
+        }
+
+      despawnEffect: hitBulletColor
+      }
+    }
+  }
+
+  surge-alloy: {
+    type: BasicBulletType
+    backColor: f3e979
+    frontColor: ffffff
+    width: 16
+    height: 20
+    ammoMultiplier: 2
+
+    pierce: true
+    pierceCap: 2
+
+    velocityScaleRandMin: 0.9
+    speed: 5.5
+    lifetime: 35
+    splashDamage: 120
+    damage: 45
+    splashDamageRadius: 50
+    collidesGround: true
+
+    lightning: 3
+    lightningLength: 15
+    lightningDamage: 20
+    lightningCone: 60
+    lightningLengthRand: 2
+
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: particleEffect
+          particles: 4
+          length: 35
+          colorFrom: f3e979
+          colorTo: f3e979
+          sizeFrom: 3
+          sizeTo: 0
+          line: true
+	        lifetime: 18
+        }
+        {
+          type: ExplosionEffect
+          waveRad: 40
+          sparkRad: 35
+          smokeRad: 35
+          smokeSize: 4
+          sparks: 6
+        }
+      ]
+    }
+
+    despawnEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: particleEffect
+          particles: 4
+          length: 35
+          colorFrom: f3e979
+          colorTo: f3e979
+          sizeFrom: 3
+          sizeTo: 0
+          line: true
+	        lifetime: 18
+        }
+        {
+          type: ExplosionEffect
+          waveRad: 40
+          sparkRad: 35
+          smokeRad: 35
+          smokeSize: 4
+          sparks: 6
+        }
+      ]
+    }
+
+    fragVelocityMin: 0.85
+    fragRandomSpread: 20
+    fragBullets: 1
+    fragBullet: {
+      type: BasicBulletType
+      backColor: f3e979
+      frontColor: ffffff
+      width: 8
+      height: 12
+      collidesGround: true
+
+      pierce: true
+      pierceCap: 2
+
+      speed: 3
+      lifetime: 20
+      splashDamage: 36
+      damage: 25
+      splashDamageRadius: 30
+
+      lightning: 3
+      lightningLength: 7.5
+      lightningDamage: 25
+      lightningCone: 45
+      lightningLengthRand: 3
+
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 10
+            colorFrom: f3e979
+            colorTo: f3e979
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 15
+            sparkRad: 10
+            smokeRad: 10
+            smokeSize: 2
+            sparks: 6
+          }
+        ]
+      }
+
+      despawnEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 10
+            colorFrom: f3e979
+            colorTo: f3e979
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 15
+            sparkRad: 10
+            smokeRad: 10
+            smokeSize: 2
+            sparks: 6
+          }
+        ]
+      }
+    }
+  }
+
+  a-i002-serpluxium: {
+    type: BasicBulletType
+    backColor: dd8181
+    frontColor: f9a992
+    width: 18
+    height: 17
+    inaccuracy: 10
+    ammoMultiplier: 2
+    reloadMultiplier: 0.75
+    shrinkX: 0.1
+    shrinkY: 0.1
+
+    pierce: true
+    pierceCap: 3
+
+    velocityScaleRandMin: 0.9
+    speed: 4.5
+    lifetime: 50
+    splashDamage: 140
+    damage: 35
+    splashDamageRadius: 60
+    collidesGround: true
+
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: particleEffect
+          particles: 4
+          length: 40
+          colorFrom: dd8181
+          colorTo: dd8181
+          sizeFrom: 3
+          sizeTo: 0
+          line: true
+	        lifetime: 18
+        }
+        {
+          type: ExplosionEffect
+          waveRad: 50
+          sparkRad: 40
+          smokeRad: 40
+          smokeSize: 8
+          sparks: 6
+        }
+      ]
+    }
+
+    despawnEffect: {
+      type: MultiEffect
+      effects: [
+        {
+          type: particleEffect
+          particles: 4
+          length: 40
+          colorFrom: dd8181
+          colorTo: dd8181
+          sizeFrom: 3
+          sizeTo: 0
+          line: true
+	        lifetime: 18
+        }
+        {
+          type: ExplosionEffect
+          waveRad: 50
+          sparkRad: 40
+          smokeRad: 40
+          smokeSize: 8
+          sparks: 6
+        }
+      ]
+    }
+
+    bulletInterval: 8
+    intervalBullet: {
+      type: BulletType
+      collides: false
+
+      speed: 1.2
+      lifetime: 20
+      splashDamage: 20
+      scaledSplashDamage: true
+      splashDamageRadius: 16
+
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: particleEffect
+            particles: 4
+            length: 14
+            colorFrom: dd8181
+            colorTo: dd8181
+            sizeFrom: 3
+            sizeTo: 0
+            line: true
+	          lifetime: 18
+          }
+          {
+            type: ExplosionEffect
+            waveRad: 16
+            sparkRad: 14
+            smokeRad: 14
+            smokeSize: 4
+            sparks: 6
+          }
+        ]
+      }
+
+      despawnEffect: none
+    }
+  }
+
+}

@@ -1,6 +1,6 @@
 type: ItemTurret
 name: Incinerate
-description: Incinerates enemies in its range.
+description: Incinerates ground enemies in its range.
 size: 3
 
 reload: 5
@@ -18,6 +18,8 @@ consumes: {
   amount: 0.1
 }
 }
+targetAir: false
+inaccuracy: 5
 
 smokeEffect: {
   type: ParticleEffect
@@ -80,6 +82,8 @@ ammoTypes: {
 
   status: melting
   statusDuration: 600
+
+  collidesAir: false
 
   ammoMultiplier: 8
   }

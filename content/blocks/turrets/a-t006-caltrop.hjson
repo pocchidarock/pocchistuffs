@@ -42,7 +42,7 @@ drawer: {
 
 requirements: [
   copper/80
-  titanium/30
+  a-i001-pallarite/30
   lead/95
   silicon/60
 ]
@@ -50,15 +50,7 @@ category: turret
 
 shootSound: shootMerui
 
-research: {
-  parent: a-t002a-pulse
-  objectives: [
-    {
-      type: SectorComplete
-      preset: ruinousShores
-    }
-  ]
-}
+research: a-t002a-pulse
 
 coolantMultiplier: 10
 
