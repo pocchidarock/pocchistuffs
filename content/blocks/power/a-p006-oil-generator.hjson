@@ -58,7 +58,8 @@ drawer: {
 
 requirements: [
   copper/45
-  lead/30
+  lead/45
   silicon/65
+  plastanium/30
   a-i001-pallarite/40
 ]
