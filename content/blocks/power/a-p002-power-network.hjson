@@ -7,7 +7,7 @@ description: An even larger power node with greater range.
 category: power
 research: power-node-large
 
-maxNodes: 25
+maxNodes: 35
 laserRange: 25
 
 requirements: [
